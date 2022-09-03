@@ -1,0 +1,47 @@
+header {
+    width: auto;
+}
+
+.navegacao_topo {
+    text-align: right;
+    background-color: #232323 ;
+}
+
+.navegacao_topo ul li {
+    display: inline-flex;   
+    color: white;
+    font-size: 9px;
+}
+
+.nav_menu {
+    text-align: center;
+    background-color: #232323;
+    
+}
+
+.nav_menu ul li {
+    display: inline-flex;
+    color: white;
+    padding-inline: 10px;
+}
+
+.nav_menu ul {
+    padding: 12px 0;
+}
+
+#divBusca{
+    background-color:white;
+    border:solid 1px;
+    border-radius:15px;
+    width:300px;
+    display: inline;
+  }
+  
+  #txtBusca{
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 16px;
+    border: none;
+    height: 10px;
+    width: 10%;
+  }
