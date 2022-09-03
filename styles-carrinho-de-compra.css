@@ -122,3 +122,21 @@ main {
   top: 300px;
 }
 
+.buttons {
+  display: flex;
+  position: relative;
+  top: 320px;
+}
+
+.codigo {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.button_adicionar {
+  border: none;
+  background-color: #232323;
+  color: white;
+  border-radius: 15px;
+  margin-left: 20px;
+}
