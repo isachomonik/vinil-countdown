@@ -1,59 +1,107 @@
-header {
-    width: auto;
-}
+/*menu navegação */
 
 .navegacao_topo {
-    text-align: right;
-    background-color: #232323 ;
+  text-align: right;
+  background-color: #232323;
 }
 
 .navegacao_topo ul li {
-    display: inline-flex;   
-    color: white;
-    font-size: 9px;
+  display: inline-flex;
+  color: white;
+  font-size: 9px;
+  margin-right: 10px;
 }
 
 .nav_menu {
-    text-align: center;
-    background-color: #232323;
+  text-align: right;
+  background-color: #232323;
 }
 
 .nav_menu ul li {
-    display: inline;
-    color: white;
-    text-align: justify;
-    padding-left: 15px;
-    padding-right: 10px;
-    font-size: 20px;
-    position: relative;
-    bottom: 6px;
+  display: inline-flex;
+  color: white;
+  font-size: 20px;
+  padding-left: 30px;
 }
 
 .nav_menu ul {
-    padding: 10px 0;
-    text-align: center;
+  padding: 10px 0;
+  text-align: center;
+  text-align: right;
 }
 
-#divBusca{
-    background-color:white;
-    border:solid 1px;
-    border-radius:15px;
-    width:300px;
-    display: inline;
-  }
-  
-  #txtBusca{
-    background-color: transparent;
-    padding-left: 25px;
-    font-size: 16px;
-    border: none;
-    height: 10px;
-    width: 10%;
-  }
+#divBusca {
+  background-color: white;
+  border: solid 1px;
+  border-radius: 15px;
+  width: 300px;
+  display: inline;
+  margin-left: 15px;
+}
 
-  .icone_carrinho_de_compra img {
+#txtBusca {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  height: 10px;
+  width: 30%;
+}
+
+.icone_carrinho_de_compra img {
+  position: relative;
+  width: 30px;
+  top: 5px;
+}
+
+.icone_usuario img {
+  position: relative;
+  width: 30px;
+  top: 5px;
+  margin-right: 10px;
+}
+
+/*main*/
+
+.titulo {
     position: relative;
-    width: 30px;
-    top: 5px;
-    
-  }
+    display: inline;
+    font-size: 40px ;
+    top: 90px;
+}
+
+main {
+  margin: 40px;
+}
+
+.caixa_1 {
+  display: inline;
+  text-align: center;
+  position: relative;
+  top: 180px;
+}
+
+.caixa_1 p {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  top: 45px;
+}
+
+.disco {
+  display: inline-block;
+  width: 50px;
+  padding: 50px;
+  background-color: black;
+  color: black;
+}
+
+.img_botao {
+  width: 20px;
+}
+
+.botao {
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  left: 20px;
+}

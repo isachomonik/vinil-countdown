@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrinho de Compra</title>
-    <link rel="stylesheet" href="styles-carrinho-de-compra.css">
-    <link rel="stylesheet" href="reset.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles-carrinho-de-compra.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navegacao_topo">
-            <ul>
-                <li>
-                    Comumidade covid-19
-                </li>
-                <li>
-                    Ajuda
-                </li>
-                <li>
-                    Fale Conosco
-                </li>
-            </ul>
-        </nav>
-        <nav class="nav_menu">
-           <ul>
-            <li>
-                Produtos
-            </li>
-            <li>
-                Contato
-            </li>
-            <li>
-                Sobre nós
-            </li>
-            <li>
-                Carrinho
-            </li>
-            <li>
-                Minha Conta
-            </li>
-            <li id="divBusca">
-            <input type="text" id="txtBusca" placeholder="O que você está procurando?"/>
-            </li>
-            <li class="icone_carrinho_de_compra">
-                <img src="./img/icone_carrinho_de_compra.png" alt="icone_carrinho_de_compra">
-                <img src="./img/icone_usuario.png" alt="">
-            </li>
-            </ul> 
-        </nav>
+      <nav class="navegacao_topo">
+        <ul>
+          <li>Comumidade covid-19</li>
+          <li>Ajuda</li>
+          <li>Fale Conosco</li>
+        </ul>
+      </nav>
+      <nav class="nav_menu">
+        <ul>
+          <li>Produtos</li>
+          <li>Contato</li>
+          <li>Sobre nós</li>
+          <li>Carrinho</li>
+          <li>Minha Conta</li>
+          <li id="divBusca">
+            <input
+              type="text"
+              id="txtBusca"
+              placeholder="O que você está procurando?"
+            />
+          </li>
+
+          <li class="icone_carrinho_de_compra">
+            <img
+              src="./img/icone_carrinho_de_compra.png"
+              alt="icone_carrinho_de_compra"
+            />
+          </li>
+
+          <li class="icone_usuario">
+            <img src="./img/icone_usuario.png" alt="icone_carrinho_de_compra" />
+          </li>
+        </ul>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section class="titulo">
+        <h1>Lista de Compras</h1>
+      </section>
+
+      <section class="caixa_1">
+        <div class="disco">DISCO</div>
+        <p>QTD</p>
+        <p>Preço</p>
+        <p>R$ 100,00</p>
+        <p>Subtotal</p>
+        <p>R$200,00</p>
+        <button class="botao" value="botao" type="button">
+        <img class="img_botao" src="./img/excluir.png" alt="excluir" />
+        </button>
+      </section>
+    </main>
+  </body>
 </html>
