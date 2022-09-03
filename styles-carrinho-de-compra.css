@@ -11,6 +11,9 @@
   font-size: 9px;
   margin-right: 10px;
 }
+.nav_menu ul a {
+  text-decoration: none;
+}
 
 .nav_menu {
   text-align: right;
