@@ -70,7 +70,7 @@
 }
 
 main {
-  margin: 40px;
+  margin: auto 40px;
 }
 
 .caixa_1 {
@@ -83,7 +83,7 @@ main {
 .caixa_1 p {
   display: inline-block;
   position: relative;
-  padding-left: 20px;
+  padding-left: 50px;
   top: 45px;
 }
 
@@ -103,5 +103,12 @@ main {
   display: inline-block;
   position: relative;
   top: 40px;
-  left: 20px;
+  left: 40px;
+}
+
+.linha_1 {
+  position: relative;
+  display: flex;
+  margin: 0;
+  top: 30px;
 }
