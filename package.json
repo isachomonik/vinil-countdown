@@ -1,16 +1,20 @@
 {
-  "name": "vinil-countdown",
-  "version": "0.0.0",
-  "private": true,
+  "name": "projeto-integrador-vinil-countdown",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido com o intuito de apresentar nossas habilidades em todo o processo de ensinamento do curso Dev Full Stack da escola Digital House.",
+  "main": "app.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "nodemon --ignore database/* app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "grupo-7",
+  "license": "ISC",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "method-override": "^3.0.0",
+    "nodemon": "^2.0.19",
+    "normalize": "^0.3.1"
   }
 }

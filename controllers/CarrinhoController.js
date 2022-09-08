@@ -1,6 +1,9 @@
+// Criacao objeto Literal para armazenar as funcoes de controller de cada endereco indicado pelo roteador para controle.
+
 const CarrinhoController = {
-    carrinho: (req, res) => {
-        res.render('carrinho_de_compra');
+
+    index: (req, res)=>{
+        res.render('carrinho.ejs');
     }
 }
 

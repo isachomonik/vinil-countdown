@@ -1,41 +1,74 @@
-var createError = require('http-errors');
+ // 1. Requizicao do modulo NPM Express
+//Express: Otimizar a construção de aplicações web e APIs, 
+//tornando-se um dos Frameworks mais populares da internet e 
+//que utiliza o Node para execução do javascript como linguagem de back-end
 var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-
+// 2 Config. Modulo express para chamar como função
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+//3 Setando o motor de visualizacao como extensao EJS
+app.set("view engine", 'ejs');
 
-app.use(logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
+// 4. Configurando para uso como pasta estatica a public
+var path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
+// Receberá as informaçes do formulário e deixara disponivel como um objeto literal
+//Isso fará com que o processamento das informacoes enviadas via formulário pelo método 
+//POST funcione dentro de um objeto literal, assim dando a possibilidade de trabalhar com 
+//esses dados, caso nao possua essas duas linhas de código nao ira funcionar.
+app.use(express.json());
+app.use(express.urlencoded({ extended: false}));
+
+//Os métodos CRUD, PUT e DELETE nao sao suportados nativamente por todos os navegadores
+//As duas linhas de código abaixo chama o módulo para substituir o metodo POST por PUT ou DELETE,
+// nos formulários, fazendo com que consigamos trabalhar com métodos citados.
+var methodOverride = require('method-override');
+app.use(methodOverride('_method'));
+
+
+//.................................................................................
+//.................................................................................
+
+//BLOCO PARA USO DE ROTAS DO PROJETO (REQUISICAO ROTEADOR E INDICACAO CAMINHO)
+
+// Router Index
+const indexRouter = require('./routers/indexRouter');
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
-// catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
+// Router Produtos
+const produtosRouter = require('./routers/produtosRouter');
+app.use('/produtos', produtosRouter);
+
+// Router Contato
+const contatoRouter = require('./routers/contatoRouter');
+app.use('/contato', contatoRouter);
+
+// Router Sobre Nós
+const sobreNosRouter = require('./routers/sobreNosRouter');
+app.use('/sobre_nos', sobreNosRouter);
+
+// Router Carrinho
+const carrinhoRouter = require('./routers/carrinhoRouter');
+app.use('/carrinho', carrinhoRouter);
+
+// Router Minha Conta
+const minhaContaRouter = require('./routers/minhaContaRouter');
+app.use('/minha_conta', minhaContaRouter);
+
+
+//.................................................................................
+//.................................................................................
+
+
+// Caso não seja encontrado nenhuma das páginas acima, aplicar
+//redirecionamento para erro 404
+app.use((req, res, next) => {
+    res.status(404).render('not-found');
 });
 
-// error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
-});
-
-module.exports = app;
+///5. Configurando porta para inicializacao do servidor (Running 3000)
+app.listen(3000, ()=>console.log('Server running on port 3000'))
