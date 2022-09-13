@@ -4,8 +4,7 @@ footer {
     justify-content: space-around;
     list-style-type: none;
     background-color: #292929;
-    padding: 20px 40px 40px 20px;
-    margin-top: 10px;
+    padding: 30px 40px 40px 20px;
 }
 
 .formas-pagamento {
@@ -37,6 +36,7 @@ footer {
 .contato div {
     color: rgb(255, 255, 255);
     font-size: 14px;
+    font-weight: 400;
 }
 
 .redes-sociais {
@@ -50,6 +50,11 @@ footer {
     color: #FFFF;
     font-size: 20px;
     margin-bottom: 72px;
+}
+
+.redes-sociais img{
+
+    margin-bottom: 45px;
 }
 
 .newsletter{
@@ -66,14 +71,25 @@ footer {
 }
 
 .newsletter div{
-    color: rgb(255, 255, 255);
-    font-size: 14px;
     width: 268px;
     height: 87px;
     text-align: center;
     display: flex;
     align-items: center;
 }
+
+.newsletter h5{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    width: 160px;
+    height: 87px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
 
 .newsletter input {
     width: 16.875rem;
