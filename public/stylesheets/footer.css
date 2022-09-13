@@ -1,4 +1,112 @@
 /* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
-footer p {
-    background-color: rgb(226, 43, 55);
+footer {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: #292929;
+    padding: 30px 40px 40px 20px;
+}
+
+.formas-pagamento {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formas-pagamento div {
+    color: rgb(255, 255, 255);
+    margin-bottom: 34px;
+    font-size: 20px;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato h2 {
+    font-size: 20px;
+    margin-bottom: 17px;
+    color: #FFFF;
+}
+
+.contato div {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociais div{
+    color: #FFFF;
+    font-size: 20px;
+    margin-bottom: 72px;
+}
+
+.redes-sociais img{
+
+    margin-bottom: 45px;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter h2{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.newsletter div{
+    width: 268px;
+    height: 87px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter h5{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    width: 160px;
+    height: 87px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.newsletter input {
+    width: 16.875rem;
+    height: 2.8125rem;
+    border-radius: 15px;
+    border: none;
+    padding: 0.8125rem;
+    padding-left: 3rem;
+}
+
+.newsInput {
+    position: relative;
+}
+
+.newsInput i {
+    position: absolute;
+    top: 27px;
+    left: 10px;
+    z-index: 2;
 }

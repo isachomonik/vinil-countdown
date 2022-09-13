@@ -1,4 +1,5 @@
 /* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
 main p {
-    background-color: blueviolet;
+    width: 200px;
+    height: 360px;
 }
