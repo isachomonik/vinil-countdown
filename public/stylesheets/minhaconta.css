@@ -1,4 +1,24 @@
 /* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
-main p {
-    background-color: rgb(189, 14, 183);
+main {
+
+    height: 150vh
+}
+
+main form {
+
+    display: inline-block;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.div-informações {
+
+background-color: aqua;
+margin: 0 30%;
+
+
 }
