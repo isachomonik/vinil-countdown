@@ -59,6 +59,9 @@ app.use('/carrinho', carrinhoRouter);
 const minhaContaRouter = require('./routers/minhaContaRouter');
 app.use('/minha_conta', minhaContaRouter);
 
+const loginRouter = require('./routers/loginRouter');
+app.use('/login', loginRouter);
+
 
 //.................................................................................
 //.................................................................................

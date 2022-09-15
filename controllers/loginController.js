@@ -3,7 +3,7 @@
 const loginController = {
 
     index: (req, res)=>{
-        res.render('loggin.ejs');
+        res.render('login.ejs');
     }
 }
 
