@@ -1,24 +1,59 @@
 /* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
-main {
-
-    height: 150vh
-}
-
-main form {
-
-    display: inline-block;
+.main-minhaConta{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-top: 5vh;
 }
 
 form label, form legend {
 	display: block;
-	font-size: 20px;
-	margin-bottom: 10px;
+	font-size: 15px;
+	margin-bottom: 20px;
 }
 
-.div-informações {
+.container-filho{
+    display: flex;
+    margin-left: 25%;
+}
 
-background-color: aqua;
-margin: 0 30%;
+.container-filho-2{
+    display: flex;
+    margin-left: 5%;
+}
+
+.div-cadastro {
+width: 500px;
+background-color: rgb(38, 226, 226);
+margin: 0 0 0 0%;
+text-transform: uppercase;
 
 
+}
+
+.div-cadastro input, .div-cadastro textarea {
+    width: 60%;
+    border-radius: 10px;
+    border-color: rgb(204, 197, 197);
+    border-width: 5px;
+    margin-bottom: 20px;
+}
+
+
+.div-cadastro h1{
+
+    margin-bottom: 5vh;
+}
+
+.container-filho-2 button{
+
+    background-color: green;
+    color: white;
+    margin-left: 35%;
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 4vh;
+    border-radius: 15px;
+    padding: 0 5px 0 5px;
 }
