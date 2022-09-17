@@ -62,6 +62,9 @@ app.use('/minha_conta', minhaContaRouter);
 const loginRouter = require('./routers/loginRouter');
 app.use('/login', loginRouter);
 
+const pedidoConfRouter = require('./routers/pedidoConfRouter');
+app.use('/pedido_confirmado', pedidoConfRouter)
+
 
 //.................................................................................
 //.................................................................................
