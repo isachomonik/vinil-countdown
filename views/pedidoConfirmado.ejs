@@ -1,0 +1,35 @@
+<%- include('./partials/head') %>
+
+<body>
+    <%- include('./partials/header') %>
+    <link rel="stylesheet" href="/stylesheets/produto-confirmado.css">
+    
+
+    <div class="conteiner">
+        <h2 id="titulo">Pedido Confirmado</h2>
+        <div class="pagamento">
+            <p><strong>Seu pedido foi realizado com sucesso.</strong></p>
+            <p>Em breve você receberá um email no endereço <strong>exemplo@exemplo.com</strong> com todos os detalhes do pedido.</p>
+            <span id="aprovado"><img src="../public/images/pagPedidoConf/confirmado.png" alt="">Pedido Confirmado</span>
+        </div>
+        <hr>
+        <div class="informacoes">
+            <img src="../public/images/pagPedidoConf/disco.png" alt="">
+            <div>
+            <h3>Informações do pedido</h3>
+            <ul>
+                <li>ID: xxxx</li>
+                <li>Total de pagamento: R$ 100,00</li>
+                <li>Forma de pagamento: Cartão de crédito</li>
+                <li>Forma de envio: Correios PAC (Frenet)</li>
+                <li>CEP de entrega: xx.xxx.xxx </li>
+            </ul>
+            <p>* Os produtos serão enviados em até 3 dias úteis após a aprovação do pagamento.</p>
+            </div>
+        </div>
+        <button class="continuar">CONTINUAR COMPRANDO</button>
+    </div>
+
+
+    <%- include('./partials/footer') %>
+</body>

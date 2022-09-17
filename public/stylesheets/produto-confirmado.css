@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    
+}
+
+div.conteiner {
+    margin: auto 147px;
+}
