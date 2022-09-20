@@ -59,6 +59,12 @@ app.use('/carrinho', carrinhoRouter);
 const minhaContaRouter = require('./routers/minhaContaRouter');
 app.use('/minha_conta', minhaContaRouter);
 
+const loginRouter = require('./routers/loginRouter');
+app.use('/login', loginRouter);
+
+const pedidoConfRouter = require('./routers/pedidoConfRouter');
+app.use('/pedido_confirmado', pedidoConfRouter)
+
 
 //.................................................................................
 //.................................................................................
@@ -72,3 +78,5 @@ app.use((req, res, next) => {
 
 ///5. Configurando porta para inicializacao do servidor (Running 3000)
 app.listen(3000, ()=>console.log('Server running on port 3000'))
+
+//batata 
