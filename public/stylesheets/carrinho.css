@@ -15,6 +15,13 @@ main p {
     padding-bottom: 3rem;
 }
 
+@media screen and (min-width: 768px) {
+    .destaques__titulo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
 .destaques__titulo {
     color: var(--cabecalho);
     font-weight: 700;
@@ -30,6 +37,6 @@ main p {
 .destaques__categorias__lista {
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 40px;
     justify-content: center;
 }
