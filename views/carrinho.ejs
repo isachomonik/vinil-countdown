@@ -2,7 +2,6 @@
 
     <body>
         <%- include('./partials/header') %>
-
             <link rel="stylesheet" href="/stylesheets/carrinho.css">
 
             <main class="conteudo">
@@ -12,9 +11,12 @@
                     </div>    
                     
                     <figure>
-                        <img class="imagem__produto" src="../public/images/produtos/metallica.svg">
+                        <img class="imagem__produto" src="../public/images/pagPedidoConf/disco.png">
                     </section>
-                        <h2 class="destaques__categorias__titulo">LP VINIL THE BEATLES ABBEY ROAD</h2>  
+                        <h2 
+                        class="destaques__categorias__titulo">
+                        LP VINIL THE BEATLES ABBEY ROAD
+                        </h2>  
 
                         <ul class="destaques__categorias__lista">
                             <li class="destaques__categorias__item"><a class="link">Qtd</a</li>
@@ -24,13 +26,22 @@
                             <li class="destaques__categorias__item"><a class="link">R$200,00</a</li>
                         </ul>    
 
-                    </div>            
-                    
-                </section>
-                
-            </main>
+                        <h2 class="desconto__cupon">
+                            Cupon De Desconto
+                        </h2>
 
+                        <section class="formulario">
+                        <form class="formulario__botao">
+                            <input class="formulario__cupon" type="text" id="cupon" name="cupon" placeholder="CÓDIGO"> 
+                            
+                            <button class="botao__adicionar" type="submit">Adicionar</button>
+                          </form>
+
+                          <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
+                        </section>
+                    </div>                    
+                </section>    
+            </main>
         <%- include('./partials/footer') %>
     </body>
-
 </html>

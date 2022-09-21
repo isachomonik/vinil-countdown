@@ -1,60 +1,87 @@
 :root {
-    --branco: #FFF; 
-    --cabecalho: #292929;
-    --rodape: #292929;
-    --roboto: 'Roboto', 'Open Sans', sans-serif;
+  --branco: #fff;
+  --cabecalho: #292929;
+  --rodape: #292929;
+  --roboto: "Roboto", "Open Sans", sans-serif;
 }
 
-
 main p {
-    background-color: rgb(43, 150, 226);
+  background-color: rgb(43, 150, 226);
 }
 
 .destaques {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 1024px) {
-    .destaques__titulo {
-        display: flex;
-        padding-left: 50px;
-        margin: 50px auto;
-    }
+  .destaques__titulo, .desconto__cupon {
+    display: flex;
+    padding-left: 50px;
+    margin: 50px auto;
+  }
+  .formulario__botao {
+    display: flex;
+    padding-left: 50px;
+    gap: 20px;
+  }
+  
 }
 
 .destaques__titulo {
-    color: var(--cabecalho);
-    font-weight: 700;
-    font-size: 2.2rem;
-    font-family: var(--roboto);
+  color: var(--cabecalho);
+  font-weight: 700;
+  font-size: 2.2rem;
+  font-family: var(--roboto);
 }
 
 .destaques__categorias__titulo {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.0rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
 }
 
-@media screen and (min-width: 1024px){
-    .destaques__categorias__titulo {
-        display: flex;
-        padding-left: 300px;
-        margin: 0px 0px 100px 0px ;
-    }
+@media screen and (min-width: 1024px) {
+  .destaques__categorias__titulo {
+    display: flex;
+    padding-left: 300px;
+    margin: 0px 0px 100px 0px;
+  }
 }
 
 .destaques__categorias__lista {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style-type: none;
+  line-height: normal;
 }
 
-@media screen and (min-width: 1024px){
-    .destaques__categorias__lista {
-        display: flex;
-        padding-left: 300px;
-        margin: 0px 0px 100px 0px ;
-    }
+@media screen and (min-width: 1024px) {
+  .destaques__categorias__lista {
+    display: flex;
+    padding-left: 300px;
+    margin: 0px 0px 100px 0px;
+    line-height: normal;
+  }
+}
+
+.formulario {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formulario__cupon {
+    padding: 5px;
+    border-radius: 10px;
+    border: solid var(--cabecalho)
+}
+
+.botao__adicionar {
+    padding: 0px 7px;
+    border-radius: 10px;
+    background: var(--cabecalho);
+    color: var(--branco);
+    text-transform: uppercase;
 }
