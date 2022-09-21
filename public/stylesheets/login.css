@@ -8,9 +8,7 @@
 
 .cadastrado {
     width: 500px;
-    background-color: red(38, 226, 226);
-    margin: 0 0 0 0%;
-    text-transform: uppercase;
+    text-transform: u;
 }
 
 
@@ -69,7 +67,7 @@ form legend {
 }
 
 
-#senha, #email, #cadastrado  {
+#senha, #email  {
     background-color: white;
     color: black;
     margin-left: 0%;
@@ -81,4 +79,3 @@ form legend {
     border-radius: 15px;
     padding: 0 5px 0 5px;
 }
-
