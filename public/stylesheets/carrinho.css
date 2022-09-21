@@ -2,6 +2,7 @@
   --branco: #fff;
   --cabecalho: #292929;
   --rodape: #292929;
+  --botao_comprar: #29bfe0;
   --roboto: "Roboto", "Open Sans", sans-serif;
 }
 
@@ -9,23 +10,32 @@ main p {
   background-color: rgb(43, 150, 226);
 }
 
+.destaques__principal {
+  display: flex;
+  padding-left: 100px;
+}
+
+.carrinho__titulo {
+  display: flex;
+  position: relative;
+}
+
+.destaques__categorias__titulo {
+  display: flex;
+  padding-left: 390px;
+}
+
 .destaques {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .destaques__titulo, .desconto__cupon {
+  .destaques__titulo,
+  .desconto__cupon {
     display: flex;
-    padding-left: 50px;
-    margin: 50px auto;
+    margin: 20px 0px;
   }
-  .formulario__botao {
-    display: flex;
-    padding-left: 50px;
-    gap: 20px;
-  }
-  
 }
 
 .destaques__titulo {
@@ -44,8 +54,6 @@ main p {
 @media screen and (min-width: 1024px) {
   .destaques__categorias__titulo {
     display: flex;
-    padding-left: 300px;
-    margin: 0px 0px 100px 0px;
   }
 }
 
@@ -60,28 +68,46 @@ main p {
 @media screen and (min-width: 1024px) {
   .destaques__categorias__lista {
     display: flex;
-    padding-left: 300px;
+    padding-left: 390px;
+    padding-top: 100px;
     margin: 0px 0px 100px 0px;
     line-height: normal;
   }
 }
 
+.desconto {
+  padding-left: 90px;
+}
+
 .formulario {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+  display: flex;
+  margin: 30px 0px;
 }
 
 .formulario__cupon {
-    padding: 5px;
-    border-radius: 10px;
-    border: solid var(--cabecalho)
+  padding: 5px;
+  border-radius: 10px;
+  border: solid var(--cabecalho);
 }
 
 .botao__adicionar {
-    padding: 0px 7px;
-    border-radius: 10px;
-    background: var(--cabecalho);
-    color: var(--branco);
-    text-transform: uppercase;
+  padding: 5px;
+  border-radius: 10px;
+  background: var(--cabecalho);
+  color: var(--branco);
+  text-transform: uppercase;
+}
+
+.botao__continue {
+  display: flex;
+  padding-left: 80px;
+}
+
+.botao__continuar__comprando {
+  padding: 0px 70px;
+  background: var(--botao_comprar);
+  color: var(--branco);
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
 }

@@ -6,42 +6,49 @@
 
             <main class="conteudo">
                 <section class="destaques">
-                    <div class="destaques_principal caixa">
+                    <div class="destaques__principal">
                         <h1 class="destaques__titulo">Lista de Compras</h1>
-                    </div>    
-                    
+                    </div>
+
                     <figure>
                         <img class="imagem__produto" src="../public/images/pagPedidoConf/disco.png">
-                    </section>
-                        <h2 
-                        class="destaques__categorias__titulo">
-                        LP VINIL THE BEATLES ABBEY ROAD
-                        </h2>  
+                </section>
 
-                        <ul class="destaques__categorias__lista">
-                            <li class="destaques__categorias__item"><a class="link">Qtd</a</li>
-                            <li class="destaques__categorias__item"><a class="link">Preço</a</li>
-                            <li class="destaques__categorias__item"><a class="link">R$100</a</li>
-                            <li class="destaques__categorias__item"><a class="link"> Subtotal</a</li>
-                            <li class="destaques__categorias__item"><a class="link">R$200,00</a</li>
-                        </ul>    
+                <h2 class="destaques__categorias__titulo">
+                    LP VINIL THE BEATLES ABBEY ROAD
+                </h2>
+                </div>
+                <ul class="destaques__categorias__lista">
+                    <li class="destaques__categorias__item"><a class="link">Qtd</a</li>
+                    <li class="destaques__categorias__item"><a class="link">Preço</a</li>
+                    <li class="destaques__categorias__item"><a class="link">R$100</a</li>
+                    <li class="destaques__categorias__item"><a class="link"> Subtotal</a</li>
+                    <li class="destaques__categorias__item"><a class="link">R$200,00</a</li>
+                </ul>
+                <section class="desconto">
+                    <h2 class="desconto__cupon">
+                        Cupon De Desconto
+                    </h2>
 
-                        <h2 class="desconto__cupon">
-                            Cupon De Desconto
-                        </h2>
-
-                        <section class="formulario">
+                    <section class="formulario">
                         <form class="formulario__botao">
-                            <input class="formulario__cupon" type="text" id="cupon" name="cupon" placeholder="CÓDIGO"> 
-                            
-                            <button class="botao__adicionar" type="submit">Adicionar</button>
-                          </form>
+                            <input class="formulario__cupon" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
 
-                          <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
+                            <button class="botao__adicionar" type="submit">Adicionar</button>
+                        </form>
+
+                        <section class="botao__continue">
+                            <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
                         </section>
-                    </div>                    
-                </section>    
+
+                    </section>
+                </section>
+                </div>
+
+                </section>
+                </section>
             </main>
-        <%- include('./partials/footer') %>
+            <%- include('./partials/footer') %>
     </body>
-</html>
+
+    </html>
