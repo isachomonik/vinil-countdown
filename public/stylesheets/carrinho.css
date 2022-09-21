@@ -1,4 +1,11 @@
-/* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
+:root {
+    --branco: #FFF; 
+    --cabecalho: #292929;
+    --rodape: #292929;
+    --roboto: 'Roboto', 'Open Sans', sans-serif;
+}
+
+
 main p {
     background-color: rgb(43, 150, 226);
 }
@@ -9,7 +16,20 @@ main p {
 }
 
 .destaques__titulo {
-    color: var();
+    color: var(--cabecalho);
     font-weight: 700;
     font-size: 2.9rem;
+    font-family: var(--roboto);
+}
+
+.destaques__categorias__titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.destaques__categorias__lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
 }
