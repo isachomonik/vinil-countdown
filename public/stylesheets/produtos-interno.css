@@ -1,4 +1,150 @@
-main section div {
-    background-color: rgb(126, 119, 126);
-    height: 130px;
+main{
+    max-height: 100%;
+    margin: 40px 60px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.navegacao{
+    margin-bottom: 55px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    left: -295px;
+    color: rgba(41, 41, 41, 0.9);
+}
+
+.container-1{
+    max-height: 100%;
+}
+
+.container-1 section{
+    /*border: solid 2px rgb(0, 0, 0);*/
+    display: flex;
+    justify-content: start;
+}
+
+.imagens-pequenas{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 40px;
+
+}
+
+.imagens-pequenas img{
+    margin-bottom: 20px;
+
+}
+
+.imagem-grande{
+
+    display: flex;
+    align-items:flex-start;
+    margin-right: 40px;
+}
+
+.imagem-grande img{
+    width: 587px;
+
+}
+
+.informacoes-venda{
+    border: solid 2px rgb(255, 0, 0);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.informacoes-venda h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    color: #292929;
+    margin-bottom: 10px;
+}
+
+.informacoes-venda div{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: rgba(41, 41, 41, 0.5);
+}
+
+.informacoes-preco{
+    border: solid 2px rgb(0, 0, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.informacoes-preco h3{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    color: #292929;
+    filter: blur(.9px);
+    margin-top: 35px;
+}
+
+.informacoes-preco div{
+    border: solid 1px rgb(4, 255, 0);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-top: 35px;
+
+    
+}
+
+.informacoes-preco-qtd :nth-child(1){
+    border: solid 2px rgb(255, 0, 238);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #292929;
+    margin-right: 25px;
+
+}
+.informacoes-preco-qtd :nth-child(3){
+    width: 41px;
+    height: 32px;
+    border: 2px solid #D9D9D9;
+    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.informacoes-preco div img{
+    border: solid 2px rgb(4, 255, 0);
+
+    
+}
+
+
+
+
+
+
+
+
+.pagina-leva-superior{
+    background-color: blue;
+    height: 100px;
 }
