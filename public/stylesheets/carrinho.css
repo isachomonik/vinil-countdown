@@ -2,3 +2,24 @@
 main p {
     background-color: rgb(43, 150, 226);
 }
+
+.caixa {
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+.destaques {
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: 55% 25% 25% 25%;
+    grid-template-rows: 53.33% 33.33% 33.33% 33.33%;
+    height: calc(20vh - 50px);
+}
+
+.destaques__titulo {
+    padding: .6rem; 
+    text-align: center;
+    width: 100%;
+}
+
