@@ -77,5 +77,3 @@ app.use((req, res, next) => {
 
 ///5. Configurando porta para inicializacao do servidor (Running 3000)
 app.listen(3000, ()=>console.log('Server running on port 3000'))
-
-//batata 

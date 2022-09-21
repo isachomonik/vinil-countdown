@@ -1,5 +1,11 @@
 /* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
-main p {
+main {
     width: 200px;
     height: 360px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+main div {
+    width: 500px;
 }

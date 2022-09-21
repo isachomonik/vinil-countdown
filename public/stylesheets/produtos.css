@@ -1,1 +1,84 @@
 /* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
+#containerInterno {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+#containerProdutos p{
+    margin: 10px
+}
+
+aside {
+    background-color: #D9D9D9;
+    height: 100%;
+    width: 13.125rem;
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+    border-radius: 10px;
+}
+
+
+.produtos {
+
+}
+
+.resultados {
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 5px;
+
+   
+
+}
+
+.menus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 'p p'
+                         'e o';
+
+    margin-right: 85px ;
+}
+
+.results {
+    grid-area: p;
+
+}
+
+.estoque {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    grid-area: e;
+}
+
+.ordenar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    grid-area: o;
+}
+
+div[class^="prod"]{
+    background-color: #D9D9D9;
+    width: 13.0625rem;
+    border-radius: 12px;
+}
