@@ -32,9 +32,10 @@ main p {
 
 @media screen and (min-width: 1024px) {
   .destaques__titulo,
-  .desconto__cupon {
+  .desconto__cupom {
     display: flex;
     margin: 20px 0px;
+    text-transform: uppercase;
   }
 }
 
@@ -84,7 +85,7 @@ main p {
   margin: 30px 0px;
 }
 
-.formulario__cupon {
+.formulario__cupom {
   padding: 5px;
   border-radius: 10px;
   border: solid var(--cabecalho);
@@ -96,6 +97,7 @@ main p {
   background: var(--cabecalho);
   color: var(--branco);
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .botao__continue {
@@ -110,4 +112,5 @@ main p {
   border: none;
   border-radius: 10px;
   text-transform: uppercase;
+  cursor: pointer;
 }
