@@ -58,9 +58,11 @@ app.use('/carrinho', carrinhoRouter);
 const minhaContaRouter = require('./routers/minhaContaRouter');
 app.use('/minha_conta', minhaContaRouter);
 
+// CRIADO POR LIGIA FELIX ( ROTA LOGIN)
 const loginRouter = require('./routers/loginRouter');
 app.use('/login', loginRouter);
 
+// CRIADO POR STEFANIE ) ( ROTA PEDIDO CONFIRMADO)
 const pedidoConfRouter = require('./routers/pedidoConfRouter');
 app.use('/pedido_confirmado', pedidoConfRouter)
 
