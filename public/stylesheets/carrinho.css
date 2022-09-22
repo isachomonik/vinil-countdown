@@ -23,6 +23,11 @@
   margin: 0px 0px 20px 0px;
 }
 
+.titulo__disco2, 
+.container__titulo__principal {
+  text-transform: uppercase;
+}
+
 .container__total__carrinho {
   height: 100px;
   width: 100%;
@@ -160,4 +165,18 @@
   border-radius: 10px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.imagem__disco__2 {
+  height: 20vmin;
+  width: 25vmin;
+}
+
+.imagem__2 {
+  float: left;
+  margin-right: 5px;
+}
+
+.container__lista2 {
+  margin-top: 80px;
 }
