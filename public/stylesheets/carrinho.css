@@ -11,21 +11,19 @@
   grid-template-columns: 3fr 2fr;
 }
 
-.container__lista__de__compra, 
+.container__lista__de__compra,
 .container__total__carrinho {
-  background: yellow;
   height: 100%;
   width: 100%;
   padding: 50px 20px;
 }
 
-.container__titulo__principal, 
+.container__titulo__principal,
 .titulo__total__carrinho {
   margin: 0px 0px 20px 0px;
 }
 
 .container__total__carrinho {
-  background: red;
   height: 100px;
   width: 100%;
 }
@@ -43,7 +41,7 @@
 
 .titulo__cupom {
   text-transform: uppercase;
-  margin: 40px 0px 25px 0px;
+  margin: 60px 0px 25px 0px;
 }
 
 .container-lista {
@@ -97,22 +95,23 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  height: 100%;
 }
 
 @media screen and(min-width:1024px) {
-.formulario-total-carrinho {
-  margin: 0px 170px 0px;
-} 
+  .formulario-total-carrinho {
+    margin: 0px 170px 0px;
+  }
 }
 
 @media screen and(min-width: 1024px) {
-.total__carrinho {
-  display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  margin-top: 25px;
+  .total__carrinho {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 25px;
+  }
 }
-} 
 
 .entrega {
   display: flex;
