@@ -6,7 +6,7 @@
 
             <main class="container">
             <div class="container__lista__de__compra">
-               <h1>Lista de Compras</h1>
+               <h1 class="container__titulo__principal">Lista de Compras</h1>
                <div class="imagem">DISCO VINIL</div> 
                <h2 class="container__titulo__do__disco">Lp vinil the beatles abbey road</h2> 
                <ul class="container-lista">
@@ -17,8 +17,24 @@
                 <li>Subtotal</li>
                 <li>R$ 200,00</li>
                </ul>
-            </div>
+               <hr class="linha" noshade>
 
+               <h2 class="titulo__cupom">Cupom de desconto</h2>
+
+               <section class="formulario">
+                <form class="formulario__botao">
+                    <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
+
+                    <button class="botao__adicionar" type="submit">Adicionar</button>
+                </form>
+
+                <section class="botao__continue">
+                    <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
+                </section>
+
+            </section>
+            </div>
+           
             <div class="container__total__carrinho">
                 Total Carrinho
             </div>
