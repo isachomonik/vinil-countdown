@@ -6,10 +6,6 @@
   --roboto: "Roboto", "Open Sans", sans-serif;
 }
 
-main p {
-  background-color: rgb(43, 150, 226);
-}
-
 .destaques__principal {
   display: flex;
   padding-left: 100px;
