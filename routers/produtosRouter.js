@@ -9,7 +9,5 @@ var router = express.Router();
 
 router.get('/', ProdutosController.index);
 
-router.get('/produtos', ProdutosController.produtosInterno);
-
 //3. Exportando o Modulo de roteamento para uso nas funcoes de Controller
 module.exports = router;

@@ -7,25 +7,24 @@ main{
     align-items: center;
 }
 
-.navegacao{
-    margin-bottom: 55px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    position: relative;
-    left: -295px;
-    color: rgba(41, 41, 41, 0.9);
-}
-
 .container-1{
     max-height: 100%;
 }
 
 .container-1 section{
-    /*border: solid 2px rgb(0, 0, 0);*/
     display: flex;
     justify-content: start;
+}
+
+.navegacao div{
+    margin-bottom: 55px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .95rem;
+    padding-left: 5px;
+    color: rgba(41, 41, 41, 0.9);
+    padding-left: 4px;
 }
 
 .imagens-pequenas{
@@ -39,11 +38,9 @@ main{
 
 .imagens-pequenas img{
     margin-bottom: 20px;
-
 }
 
 .imagem-grande{
-
     display: flex;
     align-items:flex-start;
     margin-right: 40px;
@@ -51,13 +48,20 @@ main{
 
 .imagem-grande img{
     width: 587px;
-
 }
 
 .informacoes-venda{
-    border: solid 2px rgb(255, 0, 0);
     display: flex;
     flex-direction: column;
+
+}
+
+
+
+/*--------------informacoes-preco-------------*/
+
+.informacoes-preco{
+    padding-top: 60px;
 
 }
 
@@ -68,83 +72,219 @@ main{
     font-size: 24px;
     color: #292929;
     margin-bottom: 10px;
+    padding-left: 4px;
 }
 
-.informacoes-venda div{
+.informacoes-venda h4{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     color: rgba(41, 41, 41, 0.5);
+    padding-left: 4px;
 }
 
-.informacoes-preco{
-    border: solid 2px rgb(0, 0, 255);
+.informacoes-preco-qtd{
     display: flex;
-    justify-content: space-between;
+    justify-content:center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
-.informacoes-preco h3{
+.informacoes-preco-qtd h2{
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
     line-height: 54px;
     color: #292929;
-    filter: blur(.9px);
-    margin-top: 35px;
+    filter: blur(.7px);
+    text-align: end;
 }
 
-.informacoes-preco div{
-    border: solid 1px rgb(4, 255, 0);
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin-top: 35px;
-
-    
-}
-
-.informacoes-preco-qtd :nth-child(1){
-    border: solid 2px rgb(255, 0, 238);
+.informacoes-preco-qtd :nth-child(2){
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 22px;
     color: #292929;
-    margin-right: 25px;
-
+    margin-right: 20px;
+    margin-left: 97px;
 }
-.informacoes-preco-qtd :nth-child(3){
-    width: 41px;
-    height: 32px;
+
+.informacoes-preco-qtd :nth-child(4){
+    width: 40px;
+    height: 30px;
     border: 2px solid #D9D9D9;
-    box-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #292929;
+}
+/*---------------------------*/
 
+/*--------------informacoes-preco-desconto-------------*/
+
+.informacoes-preco-desconto{
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
-.informacoes-preco div img{
-    border: solid 2px rgb(4, 255, 0);
-
-    
+.informacoes-preco-desconto h2{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 87px;
+    text-align: end;
 }
 
+.informacoes-preco-desconto :nth-child(2){
+    margin-left: 40px;
+    border: solid 2px rgb(76, 129, 73);
+    background: #36BB5B;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    width: 115px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+}
 
+/*---------------------------*/
 
+/*--------------informacoes-preco-parcelas-------------*/
 
+.informacoes-preco-parcelas{
+    margin-bottom: 60px;
+    padding-left: 4px;
+}
 
+.informacoes-preco-parcelas p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13.5px;
+    line-height: 20px;
+    color: rgba(41, 41, 41, 0.9);
+}
 
+.informacoes-preco-parcelas strong{
+    color: rgba(54, 187, 91, 0.9);
+}
+/*---------------------------*/
 
+/*--------------informacoes-preco-frete-------------*/
+
+.informacoes-preco-frete{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding-left: 4px;
+    margin-bottom: 5px;
+}
+
+.informacoes-preco-frete p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    color: #292929;
+    margin-right: 15px;
+
+}
+/*---------------------------*/
+
+/*--------------informacoes-preco-form-cep-------------*/
+
+.informacoes-preco-form-cep{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    margin-bottom: 70px;
+    padding-left: 4px;
+}
+
+.informacoes-preco-form-cep input{
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    width: 279px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 19px;
+}
+
+.informacoes-preco-form-cep input::placeholder {
+    opacity: 0.5;
+}
+
+.informacoes-preco-form-cep button{
+    background: #29BFE0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 115px;
+    height: 30px;
+    color: white;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+}
+
+/*--------------informacoes-preco-comprar-------------*/
+
+.informacoes-preco-comprar{
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.informacoes-preco-comprar button{ 
+    width: 413px;
+    height: 50px;
+    background: #36BB5B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.informacoes-preco-comprar p{ 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    opacity: .55;
+    text-align: center;
+}
+
+/*---------------------------*/
 
 .pagina-leva-superior{
-    background-color: blue;
-    height: 100px;
+    border: 1px solid black;
+    width: 1260px;
+    height: 600px;
 }
