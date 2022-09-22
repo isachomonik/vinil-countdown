@@ -6,107 +6,19 @@
   --roboto: "Roboto", "Open Sans", sans-serif;
 }
 
-.destaques__principal {
-  display: flex;
-  padding-left: 100px;
+.container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
 }
 
-.carrinho__titulo {
-  display: flex;
-  position: relative;
+.container__lista__de__compra {
+  background: yellow;
+  height: 100px;
+  width: 100%;
 }
 
-.destaques__categorias__titulo {
-  display: flex;
-  padding-left: 390px;
-}
-
-.destaques {
-  padding-top: 3rem;
-  padding-bottom: 2.5rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .destaques__titulo,
-  .desconto__cupom {
-    display: flex;
-    margin: 20px 0px;
-    text-transform: uppercase;
-  }
-}
-
-.destaques__titulo {
-  color: var(--cabecalho);
-  font-weight: 700;
-  font-size: 2.2rem;
-  font-family: var(--roboto);
-}
-
-.destaques__categorias__titulo {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
-}
-
-@media screen and (min-width: 1024px) {
-  .destaques__categorias__titulo {
-    display: flex;
-  }
-}
-
-.destaques__categorias__lista {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  list-style-type: none;
-  line-height: normal;
-}
-
-@media screen and (min-width: 1024px) {
-  .destaques__categorias__lista {
-    display: flex;
-    padding-left: 390px;
-    padding-top: 100px;
-    margin: 0px 0px 100px 0px;
-    line-height: normal;
-  }
-}
-
-.desconto {
-  padding-left: 90px;
-}
-
-.formulario {
-  display: flex;
-  margin: 30px 0px;
-}
-
-.formulario__cupom {
-  padding: 5px;
-  border-radius: 10px;
-  border: solid var(--cabecalho);
-}
-
-.botao__adicionar {
-  padding: 5px;
-  border-radius: 10px;
-  background: var(--cabecalho);
-  color: var(--branco);
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.botao__continue {
-  display: flex;
-  padding-left: 80px;
-}
-
-.botao__continuar__comprando {
-  padding: 0px 70px;
-  background: var(--botao_comprar);
-  color: var(--branco);
-  border: none;
-  border-radius: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
+.container__total__carrinho {
+  background: red;
+  height: 100px;
+  width: 100%;
 }
