@@ -4,51 +4,73 @@
         <%- include('./partials/header') %>
             <link rel="stylesheet" href="/stylesheets/carrinho.css">
 
-            <main class="conteudo">
-                <section class="destaques">
-                    <div class="destaques__principal">
-                        <h1 class="destaques__titulo">Lista de Compras</h1>
-                    </div>
+            <main class="container">
+            <div class="container__lista__de__compra">
+               <h1 class="container__titulo__principal">Lista de Compras</h1>
+               <div class="imagem"><img src="../images/pagPedidoConf/disco.png" class="disco__link__park"></div> 
+               <h2 class="container__titulo__do__disco">Lp vinil the beatles abbey road</h2> 
+               <ul class="container-lista">
+                <li>QTD</li>
+                <li>02</li>
+                <li>Preço</li>
+                <li>R$ 100,00</li>
+                <li>Subtotal</li>
+                <li>R$ 200,00</li>
+               </ul>
+               <hr class="linha" noshade>
 
-                    <figure>
-                        <img class="imagem__produto" src="../public/images/pagPedidoConf/disco.png">
+               <h2 class="titulo__cupom">Cupom de desconto</h2>
+
+               <section class="formulario">
+                <form class="formulario__botao">
+                    <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
+
+                    <button class="botao__adicionar" type="submit">Adicionar</button>
+                </form>
+
+                <section class="botao__continue">
+                    <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
                 </section>
 
-                <h2 class="destaques__categorias__titulo">
-                    LP VINIL THE BEATLES ABBEY ROAD
-                </h2>
-                </div>
-                <ul class="destaques__categorias__lista">
-                    <li class="destaques__categorias__item"><a class="link">Qtd</a</li>
-                    <li class="destaques__categorias__item"><a class="link">Preço</a</li>
-                    <li class="destaques__categorias__item"><a class="link">R$100</a</li>
-                    <li class="destaques__categorias__item"><a class="link"> Subtotal</a</li>
-                    <li class="destaques__categorias__item"><a class="link">R$200,00</a</li>
-                </ul>
-                <section class="desconto">
-                    <h2 class="desconto__cupom">
-                        Cupom de desconto
-                    </h2>
+            </section>
+            </div>
+           
+            <div class="container__total__carrinho">
+                <p class="titulo__total__carrinho">Total Carrinho</p>
 
-                    <section class="formulario">
-                        <form class="formulario__botao">
-                            <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
-
-                            <button class="botao__adicionar" type="submit">Adicionar</button>
-                        </form>
-
-                        <section class="botao__continue">
-                            <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
-                        </section>
-
-                    </section>
+                <section class="total__carrinho">
+                    <p>Subtotal</p>
+                    <p>R$ 200,00</p>
                 </section>
-                </div>
 
+                <section class="entrega">
+                    <p>Entrega</p>
                 </section>
+
+                <section class="formulario-total-carrinho">
+                    <form class="formulario__carrinho">
+                        <input type="text" class="formulario__cep" id="cep" name="cep" placeholder="Digite seu Cep">
+
+                        <button class="botao__calcular" type="submit">
+                            Calcular
+                        </button>
+                    </form>
+    
                 </section>
+
+                <section class="total__carrinho">
+                    <p>Total</p>
+                    <p>R$ 350,00</p>
+                </section>
+
+                <section class="botao-finalizar-compra">
+                    <button class="botao__finalizar__compra" type="submit">Finalizar compra</button>
+                </section>
+
+            </div>
+           
             </main>
-    </body>
 
+            <%- include('./partials/footer') %>
+    </body>
     </html>
-    <%- include('./partials/footer') %>

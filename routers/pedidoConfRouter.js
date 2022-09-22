@@ -7,3 +7,5 @@ var router = express.Router();
 router.get('/', PedidoConfController.index);
 
 module.exports = router;
+
+//teste 
