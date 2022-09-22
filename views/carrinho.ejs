@@ -5,72 +5,70 @@
             <link rel="stylesheet" href="/stylesheets/carrinho.css">
 
             <main class="container">
-            <div class="container__lista__de__compra">
-               <h1 class="container__titulo__principal">Lista de Compras</h1>
-               <div class="imagem"><img src="../images/pagPedidoConf/disco.png" class="disco__link__park"></div> 
-               <h2 class="container__titulo__do__disco">Lp vinil the beatles abbey road</h2> 
-               <ul class="container-lista">
-                <li>QTD</li>
-                <li>02</li>
-                <li>Preço</li>
-                <li>R$ 100,00</li>
-                <li>Subtotal</li>
-                <li>R$ 200,00</li>
-               </ul>
-               <hr class="linha" noshade>
+                <div class="container__lista__de__compra">
+                    <h1 class="container__titulo__principal">Lista de Compras</h1>
+                    <div class="imagem"><img src="../images/pagPedidoConf/disco.png" class="disco__link__park"></div>
+                    <h2 class="container__titulo__do__disco">Lp vinil the beatles abbey road</h2>
+                    <ul class="container-lista">
+                        <li>QTD</li>
+                        <li>02</li>
+                        <li>Preço</li>
+                        <li>R$ 100,00</li>
+                        <li>Subtotal</li>
+                        <li>R$ 200,00</li>
+                    </ul>
+                    <hr class="linha" noshade>
 
-               <h2 class="titulo__cupom">Cupom de desconto</h2>
+                    <h2 class="titulo__cupom">Cupom de desconto</h2>
 
-               <section class="formulario">
-                <form class="formulario__botao">
-                    <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
+                    <section class="formulario">
+                        <form class="formulario__botao">
+                            <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
 
-                    <button class="botao__adicionar" type="submit">Adicionar</button>
-                </form>
+                            <button class="botao__adicionar" type="submit">Adicionar</button>
+                        </form>
 
-                <section class="botao__continue">
-                    <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
-                </section>
+                        <section class="botao__continue">
+                            <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
+                        </section>
 
-            </section>
-            </div>
-           
-            <div class="container__total__carrinho">
-                <p class="titulo__total__carrinho">Total Carrinho</p>
+                    </section>
+                </div>
 
-                <section class="total__carrinho">
-                    <p>Subtotal</p>
-                    <p>R$ 200,00</p>
-                </section>
+                <div class="container__total__carrinho">
+                    <p class="titulo__total__carrinho">Total Carrinho</p>
 
-                <section class="entrega">
-                    <p>Entrega</p>
-                </section>
+                    <section class="total__carrinho">
+                        <p>Subtotal</p>
+                        <p>R$ 200,00</p>
+                    </section>
 
-                <section class="formulario-total-carrinho">
-                    <form class="formulario__carrinho">
-                        <input type="text" class="formulario__cep" id="cep" name="cep" placeholder="Digite seu Cep">
+                    <section class="entrega">
+                        <p>Entrega</p>
+                    </section>
 
-                        <button class="botao__calcular" type="submit">
-                            Calcular
-                        </button>
-                    </form>
-    
-                </section>
+                    <section class="formulario-total-carrinho">
+                        <form class="formulario__carrinho">
+                            <input type="text" class="formulario__cep" id="cep" name="cep" placeholder="Digite seu Cep">
 
-                <section class="total__carrinho">
-                    <p>Total</p>
-                    <p>R$ 350,00</p>
-                </section>
+                            <button class="botao__calcular" type="submit">
+                                Calcular
+                            </button>
+                        </form>
 
-                <section class="botao-finalizar-compra">
-                    <button class="botao__finalizar__compra" type="submit">Finalizar compra</button>
-                </section>
+                    </section>
 
-            </div>
-           
+                    <section class="total__carrinho">
+                        <p>Total</p>
+                        <p>R$ 350,00</p>
+                    </section>
+
+                    <section class="botao-finalizar-compra">
+                        <button class="botao__finalizar__compra" type="submit">Finalizar compra</button>
+                    </section>
+
+                </div>
             </main>
-
             <%- include('./partials/footer') %>
     </body>
     </html>
