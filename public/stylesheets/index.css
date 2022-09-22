@@ -1,11 +1,26 @@
-/* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
-main {
-    width: 200px;
-    height: 360px;
-    margin-left: 20px;
-    margin-top: 20px;
+.destaques {
+    text-align: center;
+    padding-top: 15px;
 }
 
-main div {
-    width: 500px;
+#1stlineproducts {
+    display: flex;
+    float: right;
+}
+
+.lancamentos {
+    text-align: center;
+}
+
+#2stlineproducts {
+    display: inline-flex;
+}
+.prod1{
+    width: 209px;
+}
+.prod2{
+    width: 209px;
+}
+.prod3{
+    width: 209px;
 }
