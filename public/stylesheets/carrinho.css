@@ -30,17 +30,15 @@
   width: 100%;
 }
 
-.imagem {
+.disco__link__park {
   height: 20vmin;
   width: 25vmin;
-  background: sandybrown;
+}
+
+.imagem {
   text-align: center;
   float: left;
   margin-right: 5px;
-}
-
-.container__titulo__do__disco {
-
 }
 
 .titulo__cupom {
@@ -107,12 +105,14 @@
 } 
 }
 
+@media screen and(min-width: 1024px) {
 .total__carrinho {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style-type: none;
   margin-top: 25px;
 }
+} 
 
 .entrega {
   display: flex;
