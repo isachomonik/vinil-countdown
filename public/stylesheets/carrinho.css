@@ -13,12 +13,31 @@
 
 .container__lista__de__compra {
   background: yellow;
-  height: 100px;
+  height: 100%;
   width: 100%;
+  padding: 50px 20px;
 }
 
 .container__total__carrinho {
   background: red;
   height: 100px;
   width: 100%;
+}
+
+.imagem {
+  height: 100px;
+  width: 100px;
+  background: sandybrown;
+  text-align: center;
+  float: left;
+  margin-right: 5px;
+}
+
+.container__titulo__do__disco {
+}
+
+.container-lista {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }
