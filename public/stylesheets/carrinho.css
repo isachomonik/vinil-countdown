@@ -27,7 +27,7 @@
   margin: 0px 0px 40px 25px;
 }
 
-.titulo__disco2, 
+.titulo__disco2,
 .container__titulo__principal {
   text-transform: uppercase;
 }
@@ -191,7 +191,6 @@
 .container__lista2 {
   margin-top: 80px;
 }
-
 
 .adicionar__item {
   justify-content: center;
