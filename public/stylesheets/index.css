@@ -1,26 +1,45 @@
 .destaques {
     text-align: center;
     padding-top: 15px;
+    padding-bottom: 20px;
 }
 
-#1stlineproducts {
+#firstlineproducts {
     display: flex;
-    float: right;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .lancamentos {
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-#2stlineproducts {
-    display: inline-flex;
+#secondlineproducts {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .prod1{
-    width: 209px;
+    background-color: #d6d6d6;
+    border-radius: 5px;
 }
 .prod2{
-    width: 209px;
+    background-color: #d6d6d6;
+    border-radius: 5px;
 }
 .prod3{
-    width: 209px;
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.prod4{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.prod5{
+    background-color: #d6d6d6;
+    border-radius: 5px;
 }
