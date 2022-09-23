@@ -9,6 +9,7 @@
 .container {
   display: grid;
   grid-template-columns: 3fr 2fr;
+  grid-template-rows: 2fr 1fr;
 }
 
 .container__lista__de__compra,
