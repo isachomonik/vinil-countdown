@@ -6,7 +6,7 @@
 
 #firstlineproducts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -19,7 +19,7 @@
 
 #secondlineproducts {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -84,4 +84,17 @@
 
 .listrecent {
     border-color: green;
+    border-radius: 5px;
+}
+.recent1{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.recent2{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.recent3{
+    background-color: #d6d6d6;
+    border-radius: 5px;
 }
