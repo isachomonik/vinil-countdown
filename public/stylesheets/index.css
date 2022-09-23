@@ -52,11 +52,13 @@
 }
 
 .mainbanner {
-    width: 1251px;
+    /* width: 1251px;
     height: 475px;
     display: block;
     margin: 0px auto;
-    padding-top: 20px;
+    padding-top: 20px; */
+    display: flex;
+    justify-content: space-around;
 }
 
 .altbanner {
@@ -81,7 +83,7 @@
 .buttongoup {
     position: relative;
     text-align: right;
-    color: blue;
+    background-color: rgba(0, 0, 255, 0);
 }
 
 .listrecent {
