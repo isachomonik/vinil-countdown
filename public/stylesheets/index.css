@@ -48,40 +48,40 @@
     background-color: #d6d6d6;
     border-radius: 5px;
 }
-.mainbanner{
+
+.mainbanner {
     width: 1251px;
     height: 475px;
     display: block;
     margin: 0px auto;
     padding-top: 20px;
 }
-.altbanner{
+
+.altbanner {
     width: 1251px;
     height: 475px;
     display: block;
     margin: 0px auto;
     padding-top: 30px;
 }
-.recentview{
+
+.recentview {
     text-align: center;
 }
-.listrecent{
+
+.listrecent {
     display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
+    justify-content: space-around;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
 
+.buttongoup {
+    position: relative;
+    text-align: right;
+    color: blue;
 }
-.recent1{
-    size: 200%;
-}
-.recent2{
 
-}
-.recent3{
-
-}
-.buttongoup{
-    position: absolute;
-    right: 0px;
+.listrecent {
+    border-color: green;
 }
