@@ -23,23 +23,35 @@
     padding-left: 50px;
     padding-right: 50px;
 }
-.prod1{
+
+.prod1 {
     background-color: #d6d6d6;
     border-radius: 5px;
 }
-.prod2{
+
+.prod2 {
     background-color: #d6d6d6;
     border-radius: 5px;
 }
-.prod3{
+
+.prod3 {
     background-color: #d6d6d6;
     border-radius: 5px;
 }
-.prod4{
+
+.prod4 {
     background-color: #d6d6d6;
     border-radius: 5px;
 }
-.prod5{
+
+.prod5 {
     background-color: #d6d6d6;
     border-radius: 5px;
+}
+.mainbanner{
+    width: 1251px;
+    height: 475px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 20px;
 }
