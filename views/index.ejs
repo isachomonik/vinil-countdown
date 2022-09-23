@@ -1,16 +1,20 @@
 <%- include('./partials/head') %>
 
     <body>
+        <a id="top"></a>
         <%- include('./partials/header') %>
             <link rel="stylesheet" href="/stylesheets/index.css">
             <main>
+                
+                <br><br>
                 <div class="mainbanner">
                     <a href=""><img src="/images/index/1stbanner.svg" alt=""></a>
                 </div>
-                <br><br>
+                <br><br><br>
                 <div class="destaques">
                     <h1>DESTAQUES</h1>
                 </div>
+                <br><br>
                 <div id="firstlineproducts">
                     <div class="prod1">
                         <img src="/images/produtos/metallica.svg" alt="">
@@ -48,9 +52,11 @@
                         <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
                     </div>
                 </div>
+                <br><br>
                 <div class="lancamentos">
                     <h1>LANÇAMENTOS</h1>
                 </div>
+                <br><br>
                 <div id="secondlineproducts">
                     <div class="prod1">
                         <img src="/images/produtos/metallica.svg" alt="">
@@ -89,15 +95,43 @@
                     </div>
                 </div>
                 </div>
+                <br><br>
                 <div class="altbanner">
                 <a href=""><img class="bannerinf" src="/images/index/1stbanner.svg"
                     alt=""></a>
                 </div>
+                <br><br><br><br>
                 <div class="recentview">
+                    <h1>VISTO RECENTEMENTE</h1>
                 </div>
+                <div class="listrecent">
+                    <div class="recent1">
+                        <img src="/images/produtos/metallica.svg" alt="">
+                        <p><strong>Título</strong></p>
+                        <p>Artista</p>
+                        <h4>R$99,99</h4>
+                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
+                    </div>
+                    <div class="recent2">
+                        <img src="/images/produtos/AmericanIdiot 4.svg" alt="">
+                        <p><strong>Título</strong></p>
+                        <p>Artista</p>
+                        <h4>R$99,99</h4>
+                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
+                    </div>
+                    <div class="recent3">
+                        <img src="/images/produtos/Linkin_Park_Hybrid_Theory 4.svg" alt="">
+                        <p><strong>Título</strong></p>
+                        <p>Artista</p>
+                        <h4>R$99,99</h4>
+                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
+                    </div>
+                </div>
+                <br><br>
                 <div class="buttongoup">
-                    <br>
+                    <button><a href="#top"><img src="/images/index/arrow.svg" alt=""></a></button>
                 </div>
+                <br><br><br>
             </main>
             <%- include('./partials/footer') %>
     </body>
