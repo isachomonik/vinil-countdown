@@ -93,35 +93,43 @@
   justify-content: end;
 }
 
+@media screen and (min-width: 1024px) {
 .containe-carrinho {
   display: flex;
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  padding-top: 60px;
+  padding-top: 120px;
+} 
 }
 
+@media screen and (min-width: 1024px) {
 .titulo__carrrinho {
   text-transform: uppercase;
   font-size: 30px;
+  padding-bottom: 50px;
+}
 }
 
-.total__carrinho, 
+@media screen and (min-width: 1024px) {
+.total__carrinho,
 .botao-finalizar-compra {
   display: flex;
   justify-content: space-evenly;
   padding: 30px 50px 0px;
+} 
 }
 
-.carrinho-entrega {
+@media screen and (min-width: 1028px) {
+  .carrinho-entrega {
   grid-area: 2/2;
   text-align: center;
   display: flex;
   flex-direction: column;
+} 
 }
 
 .entrega {
-  padding-bottom: 20px;
   font-family: var(--roboto);
   font-weight: 500;
   font-size: 24px;
@@ -132,7 +140,7 @@
 }
 
 .icone__localização {
-
+  display: flex;
 }
 
 @media screen and (min-width: 1024px) {
@@ -141,6 +149,7 @@
   justify-content: center;
   align-items: center;
   padding-right: 110px;
+  padding-bottom: 5px;
 } 
 }
 
