@@ -41,7 +41,16 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+  align-items: center;
+  text-align: center;
   padding-top: 80px;
+}
+
+.adicionar__item {
+  border: solid black;
+  margin: 3px;
+  color: inherit;
+  pointer-events: none;
 }
 
 .form {
