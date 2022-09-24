@@ -60,7 +60,7 @@
 .formulario__cep {
   padding: 8px 10px;
   border: solid var(--preto);
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .botao__adicionar,
@@ -68,16 +68,24 @@
   padding: 8px 12px;
   background: var(--preto);
   color: var(--branco);
-  border-radius: 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
 .botao__continuar__comprando {
-  padding: 8px 100px;
+  padding: 8px 80px;
   background-color: var(--botao_comprar);
   color: var(--branco);
-  border-radius: 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
   text-transform: uppercase;
+  font-family: var(--roboto);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .botao__continue {
@@ -90,12 +98,6 @@
   text-align: center;
   flex-direction: column;
   justify-content: center;
-  padding-top: 60px;
-}
-
-.total__carrinho {
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .titulo__carrrinho {
@@ -103,8 +105,11 @@
   font-size: 30px;
 }
 
-.total__carrinho {
-  padding: 50px 50px;
+.total__carrinho, 
+.botao-finalizar-compra {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 50px 0px;
 }
 
 .carrinho-entrega {
@@ -116,7 +121,21 @@
 
 .entrega {
   padding-bottom: 50px;
-  text-transform: uppercase;
+  font-family: var(--roboto);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--preto);
+  margin-right: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+.calcular__frete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 }
 
 .formulario-total-carrinho {
@@ -126,11 +145,15 @@
 }
 
 .botao__finalizar__compra {
-  padding: 8px 80px;
+  padding: 8px 55px;
   background-color: var(--botao_finalizar_compra);
   color: var(--branco);
-  border-radius: 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
   text-transform: uppercase;
   font-family: var(--roboto);
   font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
