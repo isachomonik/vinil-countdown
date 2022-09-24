@@ -2,6 +2,7 @@
   --branco: #fff;
   --preto: #292929;
   --botao_comprar: #29bfe0;
+  --botao_finalizar_compra: #01a81a;
   --roboto: "Roboto", "Open Sans", sans-serif;
 }
 
@@ -55,14 +56,79 @@
   text-align: center;
 }
 
-.formulario__cupom {
-  padding: 3px 10px;
+.formulario__cupom, 
+.formulario__cep {
+  padding: 8px 10px;
   border: solid var(--preto);
   border-radius: 8px;
 }
 
-.botao__adicionar {
-  padding: 3px 6px;
+.botao__adicionar,
+.botao__calcular {
+  padding: 8px 12px;
   background: var(--preto);
-  color: var(--branco)
+  color: var(--branco);
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.botao__continuar__comprando {
+  padding: 8px 100px;
+  background-color: var(--botao_comprar);
+  color: var(--branco);
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+.botao__continue {
+  display: flex;
+  justify-content: end;
+}
+
+.containe-carrinho {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.total__carrinho {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.titulo__carrrinho {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.total__carrinho {
+  padding: 50px 50px;
+}
+
+.carrinho-entrega {
+  grid-area: 2/2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.entrega {
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.formulario-total-carrinho {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.botao__finalizar__compra {
+  padding: 8px 100px;
+  background-color: var(--botao_finalizar_compra);
+  color: var(--branco);
+  border-radius: 8px;
+  text-transform: uppercase;
 }
