@@ -1,7 +1,6 @@
 :root {
   --branco: #fff;
-  --cabecalho: #292929;
-  --rodape: #292929;
+  --preto: #292929;
   --botao_comprar: #29bfe0;
   --roboto: "Roboto", "Open Sans", sans-serif;
 }
@@ -9,12 +8,13 @@
 .container {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  grid-template-rows: 3fr 2fr;
+  grid-template-rows: 3fr 3fr 2fr;
   grid-auto-flow: row;
 }
 
-.container-disco-one {
-  background: yellow;
+.container-disco-one, 
+.formulario ,
+.container-disco-two {
   padding: 50px 0px 0px 35px;
 }
 
@@ -22,19 +22,47 @@
   font-size: 40px;
 }
 
-.imagem__beatles {
+.imagem__beatles, 
+.imagem__beatles__two {
   padding: 35px 0px;
   float: left;
 }
 
-.titulo__disco__beatles {
+.titulo__disco__beatles, 
+.titulo__disco__beatles__two,
+.titulo__cupom {
   padding: 35px 0px;
   text-transform: uppercase;
 }
 
-.lista__disco__one {
+.lista__disco__one,
+.lista__disco__two {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   padding-top: 80px;
+}
+
+.form {
+  grid-area: 3;
+}
+
+.formulario__botao {
+  display: flex;
+  gap: 15px;
+  float: left;
+  align-items: center;
+  text-align: center;
+}
+
+.formulario__cupom {
+  padding: 3px 10px;
+  border: solid var(--preto);
+  border-radius: 8px;
+}
+
+.botao__adicionar {
+  padding: 3px 6px;
+  background: var(--preto);
+  color: var(--branco)
 }

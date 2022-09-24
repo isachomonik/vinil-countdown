@@ -28,7 +28,7 @@
                     <hr class="linha" noshade>
                 </div>
 
-                <div class="container-formulario">
+                <div class="containe>
 
                     <h4 class="titulo__total__carrinhos">Total Carrinho</h4>
   
@@ -62,18 +62,19 @@
                     </section>
                 </div>
 
-                <div class="container-disco-two">
+                <div>
+                    <section class="container-disco-two">
+                        <div  class="imagem__beatles__two">
+                            <img src="/images/produtos_interno/img1.svg" class="disco__link__park">
+                        </div> 
+                        <h2 class="titulo__disco__beatles__two">Return of the dream canteen (exclusive purple)</h2>
 
-
-                    <section class="container__lista2">
-                        <div class="imagem"><img src="/images/produtos_interno/img1.svg" class="disco__link__park">
-                        </div>
-                        <h2 class="titulo__disco2">Return of the dream canteen (exclusive purple)</h2>
-
-                        <ul class="container-lista">
+                        <ul class="lista__disco__two">
                             <li>QTD</li>
-                            <li><img src="/images/produtos_interno/button_qtd1.svg"><a class="adicionar__item" href="#">
-                                    02 </a><img src="/images/produtos_interno/button_qtd2.svg"></li>
+                            <li><img src="/images/produtos_interno/button_qtd1.svg">
+                                <a class="adicionar__item" href="#"> 02 </a>
+                                <img src="/images/produtos_interno/button_qtd2.svg">
+                            </li>
                             <li>Preço</li>
                             <li>R$ 100,00</li>
                             <li>Subtotal</li>
@@ -81,24 +82,23 @@
                         </ul>
                         <hr class="linha" noshade>
                     </section>
-
-                    <h2 class="titulo__cupom">Cupom de desconto</h2>
-
+                </div>        
+                   
+                <div class="form">
                     <section class="formulario">
+                        <h2 class="titulo__cupom">Cupom de desconto</h2>
                         <form class="formulario__botao">
                             <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
-
                             <button class="botao__adicionar" type="submit">Adicionar</button>
                         </form>
 
                         <section class="botao__continue">
                             <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
                         </section>
-
+                </div>             
                     </section>
                 </div>
             </main>
             <%- include('./partials/footer') %>
     </body>
-
-    </html>
+</html>
