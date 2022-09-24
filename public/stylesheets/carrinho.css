@@ -47,10 +47,12 @@
 }
 
 .adicionar__item {
-  border: solid black;
-  margin: 3px;
+  border: 4px 1cm var(--preto);
+  margin: 2px;
   color: inherit;
   pointer-events: none;
+  font-size: 20px;
+  border: solid 1px rgb(130, 130, 130);
 }
 
 .form {
@@ -130,7 +132,7 @@
 }
 
 @media screen and (min-width: 1028px) {
-  .carrinho-entrega {
+.carrinho-entrega {
   grid-area: 2/2;
   text-align: center;
   display: flex;
