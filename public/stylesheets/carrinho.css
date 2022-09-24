@@ -1,7 +1,6 @@
 :root {
   --branco: #fff;
-  --cabecalho: #292929;
-  --rodape: #292929;
+  --preto: #292929;
   --botao_comprar: #29bfe0;
   --roboto: "Roboto", "Open Sans", sans-serif;
 }
@@ -9,204 +8,61 @@
 .container {
   display: grid;
   grid-template-columns: 3fr 2fr;
+  grid-template-rows: 3fr 3fr 2fr;
+  grid-auto-flow: row;
 }
 
-.container__lista__de__compra,
-.container__total__carrinho {
-  height: 100%;
-  width: 100%;
-  padding: 50px 20px;
+.container-disco-one, 
+.formulario ,
+.container-disco-two {
+  padding: 50px 0px 0px 35px;
 }
 
-.titulo__total__carrinhos {
-  text-transform: uppercase;
-  margin-top: 120px;
-  font-size: 26px;
+.titulo__principal {
+  font-size: 40px;
 }
 
-.titulo__total__carrinho {
-  margin: 0px 0px 40px 25px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-@media screen and (min-width:1024px) {
- 
-.container__titulo__principal {
-  text-transform: uppercase;
-  margin-bottom: 50px;
-  padding-left: 45px;
-} 
-}
-
-@media screen and(min-width:1024px) {
-
-  .container__total__carrinho {
-    height: 100px;
-    width: 100%;
-  }
-}
-
-.disco__link__park {
-  height: 20vmin;
-  width: 25vmin;
-}
-
-.imagem {
+.imagem__beatles, 
+.imagem__beatles__two {
+  padding: 35px 0px;
   float: left;
-  margin-right: 0px 5px;
 }
 
+.titulo__disco__beatles, 
+.titulo__disco__beatles__two,
 .titulo__cupom {
+  padding: 35px 0px;
   text-transform: uppercase;
-  margin: 120px 0px 2px 25px;
 }
 
-
-@media screen and (min-width: 1024px) {
-  .container-lista {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin-top: 70px;
-    text-align: center;
-    align-items: center;
-  }
-
-  .linha {
-    margin-top: 30px;
-  }
-
-  .formulario {
-    display: flex;
-    margin: 20px 25px 40px;
-  }
-
-  .formulario__cupom {
-    padding: 5px;
-    border-radius: 10px;
-    border: solid var(--cabecalho);
-  }
-
-  .botao__adicionar {
-    padding: 5px;
-    margin-left: 10px;
-    border-radius: 10px;
-    background: var(--cabecalho);
-    color: var(--branco);
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-.botao__continue {
-    display: flex;
-    padding-left: 80px;
-  }
-
-.botao__continuar__comprando {
-    padding: 0px 100px 0px 100px;
-    background: var(--botao_comprar);
-    color: var(--branco);
-    border: none;
-    border-radius: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-.container__total__carrinho {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0px;
-    width: 100%;
-    padding: 50px;
-  }
-
-.formulario-total-carrinho {
-  flex-direction: row;
+.lista__disco__one,
+.lista__disco__two {
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  line-height: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 80px;
 }
 
-  @media screen and(min-width: 1024px) {
-    .total__carrinho,
-    .formulario-total-carrinho {
-      display: flex;
-      justify-content: space-evenly;
-      list-style-type: none;
-      margin-top: 95px;
-    }
-  }
+.form {
+  grid-area: 3;
+}
 
-  .titulo__total__carrinho {
-    font-size: 26px;
-  }
+.formulario__botao {
+  display: flex;
+  gap: 15px;
+  float: left;
+  align-items: center;
+  text-align: center;
+}
 
-  .formulario__carrinho {
-    margin-top: 1px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+.formulario__cupom {
+  padding: 3px 10px;
+  border: solid var(--preto);
+  border-radius: 8px;
+}
 
-  .formulario__cep {
-    padding: 5px 18px 5px;
-    border-radius: 10px;
-  }
-
-  .botao__calcular {
-    padding: 5px;
-    margin-left: 10px;
-    border-radius: 10px;
-    background: var(--cabecalho);
-    color: var(--branco);
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  .total__carrinho {
-    margin-top: 80px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-
-  .botao-finalizar-compra {
-    margin: 20px;
-  }
-
-  .botao__finalizar__compra {
-    padding: 8px 100px 8px 100px;
-    background: var(--botao_comprar);
-    color: var(--branco);
-    border: none;
-    border-radius: 10px;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
-
-  @media screen and (min-width: 1024px) {
-    .container__lista2 {
-      margin-top: 15%;
-      flex-direction: row;
-    }
-  }
-
-  .adicionar__item {
-    justify-content: center;
-    border: 1px solid black;
-    padding: 3px;
-    margin: 4px;
-    border-radius: 5px;
-    list-style-type: none;
-    cursor: all-scroll;
-    align-items: center;
-    color: black;
-  }
-
-.entrega {
-  margin: 50px 0px 20px;
-  padding-right: 250px;
+.botao__adicionar {
+  padding: 3px 6px;
+  background: var(--preto);
+  color: var(--branco)
 }

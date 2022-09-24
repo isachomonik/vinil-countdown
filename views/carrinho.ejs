@@ -5,58 +5,33 @@
             <link rel="stylesheet" href="/stylesheets/carrinho.css">
 
             <main class="container">
-                <div class="container__lista2">
-                    <h1 class="container__titulo__principal">Lista de Compras</h1>
-                    <div class="imagem"><img src="/images/produtos_interno/img3.svg" class="disco__link__park"></div>
-                    <h2 class="titulo__disco">Lp vinil the beatles abbey road</h2>
-                    <ul class="container-lista">
+
+                <div class="container-disco-one">
+
+                    <h1 class="titulo__principal">Lista de Compras</h1>
+                    <div class="imagem__beatles"><img src="/images/produtos_interno/img3.svg" class="disco__link__park"></div>
+                    
+                    <h2 class="titulo__disco__beatles">Lp vinil the beatles abbey road</h2>
+
+                    <ul class="lista__disco__one">
                         <li>QTD</li>
-                        <li><img src="/images/produtos_interno/button_qtd1.svg"><a class="adicionar__item" href="#"> 02
-                            </a><img src="/images/produtos_interno/button_qtd2.svg"></li>
+                        <li>
+                            <img src="/images/produtos_interno/button_qtd1.svg">
+                            <a class="adicionar__item" href="#"> 02 </a>
+                            <img src="/images/produtos_interno/button_qtd2.svg">
+                        </li>
                         <li>Preço</li>
                         <li>R$ 100,00</li>
                         <li>Subtotal</li>
                         <li>R$ 200,00</li>
                     </ul>
                     <hr class="linha" noshade>
-
-
-                    <section class="container__lista2">
-                        <div class="imagem"><img src="/images/produtos_interno/img1.svg" class="disco__link__park">
-                        </div>
-                        <h2 class="titulo__disco2">Return of the dream canteen (exclusive purple)</h2>
-
-                        <ul class="container-lista">
-                            <li>QTD</li>
-                            <li><img src="/images/produtos_interno/button_qtd1.svg"><a class="adicionar__item" href="#">
-                                    02 </a><img src="/images/produtos_interno/button_qtd2.svg"></li>
-                            <li>Preço</li>
-                            <li>R$ 100,00</li>
-                            <li>Subtotal</li>
-                            <li>R$ 200,00</li>
-                        </ul>
-                        <hr class="linha" noshade>
-                    </section>
-
-                    <h2 class="titulo__cupom">Cupom de desconto</h2>
-
-                    <section class="formulario">
-                        <form class="formulario__botao">
-                            <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
-
-                            <button class="botao__adicionar" type="submit">Adicionar</button>
-                        </form>
-
-                        <section class="botao__continue">
-                            <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
-                        </section>
-
-                    </section>
                 </div>
 
-                <div class="container__total__carrinho">
-                    <h4 class="titulo__total__carrinhos">Total Carrinho</h4>
+                <div class="containe>
 
+                    <h4 class="titulo__total__carrinhos">Total Carrinho</h4>
+  
                     <section class="total__carrinho">
                         <p>Subtotal</p>
                         <p>R$ 400,00</p>
@@ -86,8 +61,44 @@
                         <button class="botao__finalizar__compra" type="submit">Finalizar compra</button>
                     </section>
                 </div>
+
+                <div>
+                    <section class="container-disco-two">
+                        <div  class="imagem__beatles__two">
+                            <img src="/images/produtos_interno/img1.svg" class="disco__link__park">
+                        </div> 
+                        <h2 class="titulo__disco__beatles__two">Return of the dream canteen (exclusive purple)</h2>
+
+                        <ul class="lista__disco__two">
+                            <li>QTD</li>
+                            <li><img src="/images/produtos_interno/button_qtd1.svg">
+                                <a class="adicionar__item" href="#"> 02 </a>
+                                <img src="/images/produtos_interno/button_qtd2.svg">
+                            </li>
+                            <li>Preço</li>
+                            <li>R$ 100,00</li>
+                            <li>Subtotal</li>
+                            <li>R$ 200,00</li>
+                        </ul>
+                        <hr class="linha" noshade>
+                    </section>
+                </div>        
+                   
+                <div class="form">
+                    <section class="formulario">
+                        <h2 class="titulo__cupom">Cupom de desconto</h2>
+                        <form class="formulario__botao">
+                            <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
+                            <button class="botao__adicionar" type="submit">Adicionar</button>
+                        </form>
+
+                        <section class="botao__continue">
+                            <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
+                        </section>
+                </div>             
+                    </section>
+                </div>
             </main>
             <%- include('./partials/footer') %>
     </body>
-
-    </html>
+</html>
