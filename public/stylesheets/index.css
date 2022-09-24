@@ -9,9 +9,9 @@ html {
 
 #firstlineproducts {
     display: flex;
+    max-width: 1256px;
+    margin: auto;
     justify-content: space-around;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .lancamentos {
@@ -22,9 +22,9 @@ html {
 
 #secondlineproducts {
     display: flex;
+    max-width: 1256px;
+    margin: auto;
     justify-content: space-around;
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .prod1 {
@@ -62,6 +62,8 @@ html {
     padding-top: 20px; */
     display: flex;
     justify-content: space-around;
+    text-align: center;
+
 }
 
 .altbanner {
@@ -78,6 +80,8 @@ html {
 
 .listrecent {
     display: flex;
+    max-width: 1260px;
+    margin: auto;
     justify-content: space-around;
     /* padding-left: 50px;
     padding-right: 50px; */
