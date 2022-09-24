@@ -115,7 +115,7 @@
 }
 
 .entrega {
-  padding: 10px;
+  padding-bottom: 50px;
   text-transform: uppercase;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .botao__finalizar__compra {
-  padding: 8px 100px;
+  padding: 8px 80px;
   background-color: var(--botao_finalizar_compra);
   color: var(--branco);
   border-radius: 8px;
