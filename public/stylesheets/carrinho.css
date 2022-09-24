@@ -31,3 +31,10 @@
   padding: 35px 0px;
   text-transform: uppercase;
 }
+
+.lista__disco__one {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-top: 80px;
+}
