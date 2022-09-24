@@ -2,7 +2,7 @@
   --branco: #fff;
   --preto: #292929;
   --botao_comprar: #29bfe0;
-  --botao_finalizar_compra: #01a81a;
+  --botao_finalizar_compra: #36BB5B;
   --roboto: "Roboto", "Open Sans", sans-serif;
 }
 
@@ -131,4 +131,6 @@
   color: var(--branco);
   border-radius: 8px;
   text-transform: uppercase;
+  font-family: var(--roboto);
+  font-weight: 600;
 }
