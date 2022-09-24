@@ -16,6 +16,12 @@ html,body {
 
 /*----------------------*/
 
+header .logo img {
+   width: 100px;
+   background-color: #FFFFFF;
+   border-radius: 10px;
+}
+
 header ul {
    display: flex;
    justify-content: space-around;

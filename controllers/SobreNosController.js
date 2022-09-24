@@ -1,10 +1,10 @@
 // Criacao objeto Literal para armazenar as funcoes de controller de cada endereco indicado pelo roteador para controle.
 
-const loginController = {
+const SobreNosController = {
 
     index: (req, res)=>{
-        res.render('login.ejs');
+        res.render('sobreNos.ejs');
     }
 }
 
-module.exports = loginController;
+module.exports = SobreNosController;

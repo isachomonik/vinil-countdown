@@ -4,11 +4,6 @@ const ProdutosController = {
 
     index: (req, res)=>{
         res.render('produtos.ejs');
-    },
-
-    produtosInterno: (req, res)=> {
-
-        res.render('produtos-interno.ejs');
     }
 }
 

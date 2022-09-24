@@ -58,14 +58,39 @@ app.use('/carrinho', carrinhoRouter);
 const minhaContaRouter = require('./routers/minhaContaRouter');
 app.use('/minha_conta', minhaContaRouter);
 
-// CRIADO POR LIGIA FELIX ( ROTA LOGIN)
-const loginRouter = require('./routers/loginRouter');
-app.use('/login', loginRouter);
+//.................................................................................
+//.................................................................................
 
-// CRIADO POR STEFANIE ) ( ROTA PEDIDO CONFIRMADO)
-const pedidoConfRouter = require('./routers/pedidoConfRouter');
-app.use('/pedido_confirmado', pedidoConfRouter)
+// VIEWS TEMPORARIAS - APOS DEFINIR ONDE SERÁ USADA APAGAR ELA DO SERVIDOR
+//----------------------------//
 
+app.use("/views_redirect", (req, res)=>{
+
+    res.render('viewsRedirect.ejs');
+});
+
+// VIEWS PRODUTO INTERNO (ALEX LIMA)
+app.use('/produto_interno', (req, res)=>{
+    res.render('produtos-interno.ejs');
+})
+
+// VIEWS LOGIN ( LIGIA FELIX)
+app.use('/login', (req, res)=>{
+    res.render('login.ejs');
+})
+
+// VIEWS PEDIDO CONFIRMADO (STEFANIE)
+app.use('/pedido_confirmado', (req, res)=>{
+    res.render('pedidoConfirmado.ejs');
+})
+
+// VIEWS NOME DA VIEW (NOME DO DEV.)
+// app.use('/DIGITE AQUI O ENDERECO DA ROTA', (req, res)=>{
+// res.render('DIGITE AQUI O NOME DA PÁGINA A REDENRIZAR.ejs');
+// })
+// APÓS INSIRA NA VIEWS ( viewsRedirect.ejs) um link exemplo (<a href="/pedido_confirmado">PÁGINA PEDIDO CONFIRMADO</a>)
+
+//----------------------------//
 
 //.................................................................................
 //.................................................................................

@@ -1,11 +1,121 @@
-/* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
-main {
-    width: 200px;
-    height: 360px;
-    margin-left: 20px;
-    margin-top: 20px;
+html {
+    scroll-behavior: smooth;
+  }
+.destaques {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
 }
 
-main div {
-    width: 500px;
+#firstlineproducts {
+    display: flex;
+    max-width: 1256px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.lancamentos {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#secondlineproducts {
+    display: flex;
+    max-width: 1256px;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.prod1 {
+    background-color: #d6d6d6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prod2 {
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+
+.prod3 {
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+
+.prod4 {
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+
+.prod5 {
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+
+.mainbanner {
+    /* width: 1251px;
+    height: 475px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 20px; */
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.altbanner {
+    width: 1251px;
+    height: 475px;
+    display: block;
+    margin: 0px auto;
+    padding-top: 30px;
+}
+
+.recentview {
+    text-align: center;
+}
+
+.listrecent {
+    display: flex;
+    max-width: 1260px;
+    margin: auto;
+    justify-content: space-around;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+}
+
+.buttongoup {
+    position: relative;
+    text-align: right;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.listrecent {
+    border-color: green;
+    border-radius: 5px;
+}
+.recent1{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.recent2{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.recent3{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.flexinterno{
+    display: flex;
+    padding-top: 20px;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+.preco{
+    padding-top: 7px;
+    padding-left: 5px;
 }
