@@ -98,6 +98,7 @@
   text-align: center;
   flex-direction: column;
   justify-content: center;
+  padding-top: 60px;
 }
 
 .titulo__carrrinho {
@@ -120,7 +121,7 @@
 }
 
 .entrega {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   font-family: var(--roboto);
   font-weight: 500;
   font-size: 24px;
@@ -130,18 +131,22 @@
   text-align: center;
 }
 
+.icone__localização {
+
+}
+
 @media screen and (min-width: 1024px) {
 .calcular__frete {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-right: 110px;
 } 
 }
 
 .formulario-total-carrinho {
   display: flex;
   justify-content: center;
-  
 }
 
 .botao__finalizar__compra {
