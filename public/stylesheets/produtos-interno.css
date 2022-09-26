@@ -45,7 +45,8 @@ main{
 }
 
 .imagem-grande{
-
+    overflow:hidden;
+    border-radius: 15px;
     max-width: 500px;
     min-width: 330px;
     display: flex;
@@ -56,9 +57,17 @@ main{
 .imagem-grande img{
     width: 100%;
     margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 3px 7px rgb(0 0 0 / 35%)
+    border-radius: 15px;
+    box-shadow: 1px 3px 7px rgb(0 0 0 / 5%);
+    -webkit-transition: 2s ease;
+    transition:  0.5s ease;
 }
+
+.imagem-grande:hover img{
+    -webkit-transform: scale(1.9);
+    transform: scale(1.9);
+    
+ }
 
 /*--------------informacoes-venda-------------*/
 
