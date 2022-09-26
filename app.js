@@ -15,7 +15,6 @@ var path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
 // Receberá as informaçes do formulário e deixara disponivel como um objeto literal
 //Isso fará com que o processamento das informacoes enviadas via formulário pelo método 
 //POST funcione dentro de um objeto literal, assim dando a possibilidade de trabalhar com 
