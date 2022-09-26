@@ -9,5 +9,8 @@ var router = express.Router();
 
 router.get('/', ProdutosController.index);
 
+// Rota para exibir o produto selecionado na página de produtos
+router.get('/:id', ProdutosController.show);
+
 //3. Exportando o Modulo de roteamento para uso nas funcoes de Controller
 module.exports = router;

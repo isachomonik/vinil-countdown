@@ -11,33 +11,35 @@
 
                 <section class="navegacao">
 
-                    <div>PÁGINA INICIAL > LPS E DISCOS DE VINIL > LP VINIL THE BEATLES ABBEY ROAD</div>
+                    <div><%=vinil.categoria%> > <%=vinil.estilo%> > <%=vinil.nome%></div>
 
                 </section>
 
                 <section>
     
                     <div class="imagens-pequenas">
-                        <img src="/images/produtos_interno/img_gg.jpg" alt="img1">
-                        <img src="/images/produtos_interno/img_1.jpg" alt="img2">
-                        <img src="/images/produtos_interno/img_1.jpg" alt="img3">
+                        <img src="<%=vinil.img1%>" alt="img1">
+                        <img src="<%=vinil.img2%>" alt="img2">
+                        <img src="<%=vinil.img3%>" alt="img3">
                     </div>
                 
                 
                     <div class="imagem-grande">
-                        <img src="/images/produtos_interno/img_gg.jpg" alt="imgg">
+                        <img src="<%=vinil.imgGg%>" alt="imgg">
                     </div>
 
                     <section class="informacoes-venda">
 
-                        <h3>LP VINIL THE BEATLES ABBEY ROAD</h3>
+                        <h3> <%=vinil.nome%> </h3>
 
-                        <h4>MARCA: THE BEATLES RECORDS <br> EAN: 5099902987613</h4>
+                        <h4>MARCA: <%=vinil.marca%> <br> EAN: <%=vinil.ean%></h4>
 
                         <div class="informacoes-preco">
                         
                             <div class="informacoes-preco-qtd">
-                                <h2>R$129,90</h2>
+
+
+                                <h2>R$<%=vinil.precoDe.toString().replace(".", ",")%></h2>
                                 <p>QTD</p>
                                 <img src="/images/produtos_interno/button_qtd1.svg" alt="-">
                                 <p>01</p>
@@ -45,12 +47,12 @@
                             </div>
 
                             <div class="informacoes-preco-desconto">
-                                <h2>R$110,40</h2>
-                                <p>15%OFF</p>
+                                <h2>R$<%=vinil.precoPor.toString().replace(".", ",")%></h2>
+                                <p><%=vinil.desconto%>%OFF</p>
                             </div>
 
                             <div class="informacoes-preco-parcelas">
-                                <p>em <strong>6x SEM JUROS</strong> no cartão de crédito</p>
+                                <p>em <strong><%=vinil.qtdParcelas%>x SEM JUROS</strong> no cartão de crédito</p>
                             </div>
 
                             <div class="informacoes-preco-frete">
@@ -87,34 +89,17 @@
                             <div class="content">
                                 <article>
                                     
-                                    <h2>Lp - Pink Floyd - The Dark Side Of The Moon</h2>
-                                    <h4>(Disco de vinil, capa dupla, encarte, pôster, MP3, postais, lacrado, remasterizado, 180g)</h4>
+                                    <h2><%=vinil.descricaoTitulo%></h2>
+                                    <h4><%=vinil.descricaoSubTitulo%></h4>
                                     
                                     <div>
                                         <h3> Descricao: </h3>
-                                        
-                                        <p>
-                                            É o oitavo álbum do Pink Floyd, gravado nos estúdios Abbey Road em Londres. Levou mais de oito meses para ser produzido, um tempo extremamente longo para aquela época. O álbum foi lançado em uma sessão de audição especial no planetário de Londres, em janeiro de 1.973. 
-                                            Dark Side Of The Moon liderou a parada de álbuns nos EUA, onde fez uma carreira de 300 semanas. No Reino Unido, o disco chegou ao segundo lugar. 
-                                            O primeiro compacto do álbum foi ‘Money’, que inclui um acompanhamento ritmico feito de sons de moedas e caixas registradoras sampleados (de uma forma bem engenharada por Roger Waters), atingiu o 13° lugar no Top 100 americano. 
-                                            Para deixar os sons sampleados do dinheiro no compasso 7/4, a fita master teve de ser cortada e emendada novamente, usando uma régua para ter certeza da precisão das batidas. 
-                                            Um segundo compacto extraído do álbum foi ‘Us And Them’, editado em outubro de 1973. 
-                                            Esta prensagem em disco de vinil é muito especial para colecionadores, pois é uma edição premium com os LPs em 180g, com a capa gatefold (dupla), pôsters, postais e um card para baixar o MP3 de alta qualidade diretamente no site da gravadora.
-                                        </p>  
+                                        <p> <%=vinil.descricao%> </p>  
                                     </div>
 
                                     <div>
                                         <h3> Músicos: </h3>
-                                        
-                                        <p>
-                                            David Gilmour, vocal e guitarras
-                                            Nick Mason, percução e efeitos
-                                            Richard Wright, teclados e vocais
-                                            Roger Waters, Baixo, vocal e efeitos
-                                            Dick Perry, sax ('Us And Them', 'Money')
-                                            Clare Torry, vocais ('The Great Gig In The Sky')
-                                            Doris Troy, Leslie Duncan, Liza Strike, Barry St. John, backing vocals
-                                        </p>  
+                                        <p> <%=vinil.musicos%> </p>  
                                     </div>
 
                                     <div>
@@ -122,20 +107,12 @@
                                         
                                         <p>
                                             <strong> Lado A: </strong>  
-                                            1 - Speak To Me
-                                            2 - Breathe In The Air 
-                                            3 - On The Run 
-                                            4 - Time 
-                                            5 - The Great Gig In The Sky 
+                                            <%=vinil.musicasLadoA%>
                                         </p>
 
                                         <p>
                                             <strong> Lado B: </strong> 
-                                            1 - Money 
-                                            2 - Us And Them 
-                                            3 - Any Colour You Like 
-                                            4 - Brain Damage 
-                                            5 - Eclipse
+                                            <%=vinil.musicasLadoB%>
                                         </p>  
                                     </div>
 
@@ -150,22 +127,22 @@
                                 <article>
                                     <div>
                                         <h3> Peso: </h3>
-                                        <p>0.450 kg </p>  
+                                        <p><%=vinil.peso%> Kg</p>  
                                     </div>
 
                                     <div>
                                         <h3> Dimensão: </h3>
-                                        <p>34 × 34 × 3 cm </p>  
+                                        <p><%=vinil.dimensaoLargura%> X <%=vinil.dimensaoComprimento%> X <%=vinil.dimensaoProfundidade%> cm </p>  
                                     </div>
 
                                     <div>
                                         <h3> Gravadora: </h3>
-                                        <p>BGM </p>  
+                                        <p><%=vinil.gravadora%></p>  
                                     </div>
                                     
                                     <div>
                                         <h3> Mídia: </h3>
-                                        <p>Disco de Vinil </p>  
+                                        <p><%=vinil.midia%></p>  
                                     </div>
                                 </article>
                             </div>

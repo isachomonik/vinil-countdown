@@ -69,11 +69,6 @@ app.use("/views_redirect", (req, res)=>{
     res.render('viewsRedirect.ejs');
 });
 
-// VIEWS PRODUTO INTERNO (ALEX LIMA)
-app.use('/produto_interno', (req, res)=>{
-    res.render('produtos-interno.ejs');
-})
-
 // VIEWS LOGIN ( LIGIA FELIX)
 app.use('/login', (req, res)=>{
     res.render('login.ejs');
