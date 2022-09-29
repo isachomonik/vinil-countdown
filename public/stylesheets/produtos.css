@@ -11,7 +11,7 @@
     
 }
 
-#containerProdutos p{
+#containerProdutos .busca{
     margin: 10px
 }
 
@@ -24,8 +24,23 @@ aside {
     grid-column-end: 1;
 
     border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
+aside ul {
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
 
 .produtos {
 
@@ -81,4 +96,34 @@ div[class^="prod"]{
     background-color: #D9D9D9;
     width: 13.0625rem;
     border-radius: 12px;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; */
+
+    position: relative;
+
+    
+}
+
+div[class^="prod"] .infos {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+div[class^="prod"] .infos p:not(p strong) {
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+div[class^="prod"] a {
+    position: absolute;
+    z-index: 2;
+    bottom: 1px;
+    right: 3px;
 }
