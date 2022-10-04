@@ -80,6 +80,7 @@ button {
     font-size: 16px;
     line-height: 23px;
     color: white;
+    cursor: pointer;
 }
 
 .continuar {
