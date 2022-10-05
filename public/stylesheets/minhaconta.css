@@ -12,9 +12,30 @@ form label, form legend {
 	margin-bottom: 20px;
 }
 
+.abas-minha-conta{
+    padding: 15px;
+    border-bottom: 2px solid gray;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#aba-nome{
+    margin-top: 25px;
+}
+
+
+.container-filho-0{
+    display: flex;
+}
+
+.container-filho-0 p {
+    font-size: 16px;
+    border-color: gray;
+}
+
 .container-filho{
     display: flex;
-    margin-left: 25%;
+    margin-left: 5%;
 }
 
 .container-filho-2{
@@ -23,16 +44,14 @@ form label, form legend {
 }
 
 .div-cadastro {
-width: 500px;
-background-color: rgb(38, 226, 226);
-margin: 0 0 0 0%;
 text-transform: uppercase;
+border-right: solid gray 2px;
 
 
 }
 
 .div-cadastro input, .div-cadastro textarea {
-    width: 60%;
+    width: 80%;
     border-radius: 10px;
     border-color: rgb(204, 197, 197);
     border-width: 5px;
@@ -44,6 +63,7 @@ text-transform: uppercase;
 
     margin-bottom: 5vh;
 }
+    
 
 .container-filho-2 button{
 
