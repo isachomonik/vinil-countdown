@@ -6,7 +6,6 @@
 .login {
     display: flex;
     height: 715px;
-    margin-right: 10%;
     margin-top: 5%;
     align-items: flex-start;
     justify-content: space-around;
@@ -15,14 +14,13 @@
 
 .cadastrado {
     width: 500px;
-    border-left: #D9D9D9 2px solid ;
-    margin-left: 417px;
+    padding: 5%;
    
 }
 
 .naocadastrado {
     width: 500px;
-    border-left: #D9D9D9 2px solid;
+    padding: 5%;
     
 }
 
@@ -77,7 +75,7 @@ form legend {
 }
 
 .img {
-    position: absolute;
+ 
     width: 210px;
     height: 210px;
     left: 74px;
@@ -87,3 +85,10 @@ form legend {
 .codigo button{
     background-color: #29BFE0;
 }
+
+.borda {
+    width: 1px;
+    height: 80%;
+    background-color: black;
+}
+
