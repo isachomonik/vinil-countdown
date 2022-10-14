@@ -16,5 +16,13 @@
     "method-override": "^3.0.0",
     "nodemon": "^2.0.20",
     "normalize": "^0.3.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isachomonik/vinil-countdown.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isachomonik/vinil-countdown/issues"
+  },
+  "homepage": "https://github.com/isachomonik/vinil-countdown#readme"
 }

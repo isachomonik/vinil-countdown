@@ -13,6 +13,11 @@
   grid-auto-flow: row;
 }
 
+.localizador__page {
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
 .container-disco-one, 
 .formulario ,
 .container-disco-two {
