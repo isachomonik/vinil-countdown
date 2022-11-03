@@ -24,12 +24,24 @@
     
 }
 
+input {
+    border-style: none;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
 form label,
 form legend {
     display: block;
     width: 40vh; 
     font-size: 15px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+button {
+    border-style: none;
 }
 
 .cadastrado button {
@@ -41,9 +53,9 @@ form legend {
     font-weight: bolder;
     width: 40vh;
     height: 4vh;
-    border-radius: 15px;
-    border-color: #36BB36;
+    border-radius: 15px;    
     padding: 0 5px 0 5px;
+    bor
     
 }
 
@@ -80,6 +92,8 @@ form legend {
     height: 210px;
     left: 74px;
     top: 409px;
+
+    align-self: center;
 }
 
 .codigo button{
