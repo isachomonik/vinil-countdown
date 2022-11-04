@@ -12,12 +12,12 @@
 }
 
 #containerProdutos .busca{
-    margin: 10px
+    margin: 30px 0 10px 0;
 }
 
 aside {
     background-color: #D9D9D9;
-    height: 100%;
+    height: 95%;
     width: 13.125rem;
 
     grid-column-start: 1;
@@ -30,11 +30,15 @@ aside {
     
     padding-left: 10px;
     padding-top: 10px;
+    margin: 20px 0 0 10px;
+
+    z-index: 1;
 }
 
 aside ul {
     margin-bottom: 20px;
     text-decoration: none;
+    list-style: outside none none;
 }
 
 aside a {
@@ -42,9 +46,6 @@ aside a {
     color: black;
 }
 
-.produtos {
-
-}
 
 .resultados {
     grid-column-start: 2;
@@ -55,6 +56,8 @@ aside a {
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 30px;
     grid-column-gap: 5px;
+
+    margin-bottom: 50px;
 
    
 
@@ -73,6 +76,7 @@ aside a {
 
 .results {
     grid-area: p;
+    margin: 20px 0 10px 0;
 
 }
 
@@ -84,12 +88,20 @@ aside a {
     grid-area: e;
 }
 
+.estoque input {
+    margin-right: 10px;
+}
+
 .ordenar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
     grid-area: o;
+}
+
+.ordenar input {
+    margin-left: 10px;
 }
 
 div[class^="prod"]{
