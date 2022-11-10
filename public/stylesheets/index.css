@@ -88,9 +88,10 @@ html {
 }
 
 .buttongoup {
-    position: relative;
+    position: fixed;
+    left: 96%;
+    bottom: 5%;
     text-align: right;
-    background-color: rgba(0, 0, 255, 0);
 }
 
 .listrecent {

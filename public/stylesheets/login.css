@@ -25,20 +25,24 @@
  
 }
 
-    input {
-        border-style: none;
-        border: 1px solid #000000;
-        margin-bottom: 20px;
-        padding: 10px;
-    
-    }
+input {
+    border-style: none;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
 
 form label,
 form legend {
     display: block;
     width: 40vh; 
     font-size: 15px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+button {
+    border-style: none;
 }
 
 
@@ -51,10 +55,15 @@ form legend {
     font-weight: bolder;
     width: 40vh;
     height: 4vh;
+<<<<<<< HEAD
     border-radius: 15px;
     border-style: none;
     padding: 0 5px 0 5px;
     
+=======
+    border-radius: 15px;    
+    padding: 0 5px 0 5px;    
+>>>>>>> e921168f665b8d7c08d875cd78e9dc1fe38dd5dc
 }
 
 .naocadastrado button {
@@ -85,6 +94,10 @@ form legend {
     height: 210px;
     left: 74px;
     top: 409px;
+<<<<<<< HEAD
+=======
+
+>>>>>>> e921168f665b8d7c08d875cd78e9dc1fe38dd5dc
     align-self: center;
 }
 
