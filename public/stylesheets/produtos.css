@@ -1,4 +1,6 @@
 /* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
+
+
 #containerInterno {
     display: grid;
     grid-template-columns: 1fr 3fr;
