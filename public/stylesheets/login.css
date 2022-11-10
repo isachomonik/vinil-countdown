@@ -55,15 +55,8 @@ button {
     font-weight: bolder;
     width: 40vh;
     height: 4vh;
-<<<<<<< HEAD
-    border-radius: 15px;
-    border-style: none;
-    padding: 0 5px 0 5px;
-    
-=======
     border-radius: 15px;    
     padding: 0 5px 0 5px;    
->>>>>>> e921168f665b8d7c08d875cd78e9dc1fe38dd5dc
 }
 
 .naocadastrado button {
@@ -94,10 +87,6 @@ button {
     height: 210px;
     left: 74px;
     top: 409px;
-<<<<<<< HEAD
-=======
-
->>>>>>> e921168f665b8d7c08d875cd78e9dc1fe38dd5dc
     align-self: center;
 }
 
