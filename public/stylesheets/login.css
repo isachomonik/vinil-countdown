@@ -1,6 +1,7 @@
+
 .main-container{
     justify-content: flex-start;
-    
+    align-items: center;
 }
 
 .login {
@@ -12,6 +13,7 @@
 
 }
 
+
 .cadastrado {
     width: 500px;
     padding: 5%;
@@ -20,9 +22,17 @@
 
 .naocadastrado {
     width: 500px;
-    padding: 5%;
-    
+    padding: 70px;
+ 
 }
+
+    input {
+        border-style: none;
+        border: 1px solid #000000;
+        margin-bottom: 20px;
+        padding: 10px;
+    
+    }
 
 form label,
 form legend {
@@ -31,6 +41,7 @@ form legend {
     font-size: 15px;
     margin-bottom: 20px;
 }
+
 
 .cadastrado button {
     background-color: #36BB36;
@@ -42,7 +53,7 @@ form legend {
     width: 40vh;
     height: 4vh;
     border-radius: 15px;
-    border-color: #36BB36;
+    border-style: none;
     padding: 0 5px 0 5px;
     
 }
@@ -57,10 +68,6 @@ form legend {
     width: 40vh;
     height: 4vh;
     border-radius: 15px;
-    border-color: #36BB36;
-    
-
-    
 }
 
 #senha, #email  {
@@ -71,18 +78,18 @@ form legend {
     width: 40vh;
     height: 4vh;
     border-radius: 15px;
-
 }
 
 .img {
- 
+    
     width: 210px;
     height: 210px;
     left: 74px;
     top: 409px;
+    align-self: center;
 }
 
-.codigo button{
+#codigo {
     background-color: #29BFE0;
 }
 
