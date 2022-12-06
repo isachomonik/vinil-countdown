@@ -1,4 +1,9 @@
 /* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
 .main-minhaConta{
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +20,7 @@ form label, form legend {
 .abas-minha-conta{
     padding: 15px;
     border-bottom: 2px solid gray;
-    margin-left: 5%;
+
     margin-right: 5%;
 }
 
@@ -30,22 +35,21 @@ form label, form legend {
 
 .container-filho-0 p {
     font-size: 16px;
-    border-color: gray;
+
 }
 
 .container-filho{
     display: flex;
-    margin-left: 5%;
+  
 }
 
 .container-filho-2{
     display: flex;
-    margin-left: 5%;
+   
 }
 
 .div-cadastro {
 text-transform: uppercase;
-border-right: solid gray 2px;
 
 
 }
@@ -76,4 +80,17 @@ border-right: solid gray 2px;
     height: 4vh;
     border-radius: 15px;
     padding: 0 5px 0 5px;
+}
+
+input {
+    border-style: none;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.border {
+    width: 1px;
+    height: 80%;
+    background-color: black;
 }
