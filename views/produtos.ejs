@@ -30,7 +30,6 @@
                                 
                             </ul>
                         </aside>
-                        <main>
                             <p class="busca">Você buscou por <strong>Dire Straits</strong></p>
                             <div class="menus">
                                 <p class="results"><strong>10</strong> produtos encontrados</p>
@@ -44,90 +43,28 @@
                                 </div>
                             </div>
                             <div class="resultados">
-                                <div class="prod1">
-                                    <img src="/images/produtos/metallica.svg" alt="">
-                                    <div class="infos">
+                                <% for(let p of produtos){ %>
 
-                                        <p><strong>Título</strong></p>
-                                        <p>Artista</p>
-                                        <h4>R$99,99</h4>
+
+                                <div class=`prod<%= p.id %>`>
+                                    <a href="/produtos/1"><img src=<%= p.img1 %>> alt=""></a>
+                                    <div class="infos">
+                                        
+                                        <p><strong><%= p.nome %></strong></p>
+                                        <p><%= p.marca %></p>
+                                        <h4><%= p.preco %></h4>
                                         <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
                                     </div>
                                 </div>
-                                <div class="prod2">
-                                    <img src="/images/produtos/AmericanIdiot 4.svg" alt="">
-                                    <div class="infos">
-
-                                        <p><strong>Título</strong></p>
-                                        <p>Artista</p>
-                                        <h4>R$99,99</h4>
-                                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="prod3">
-                                    <img src="/images/produtos/Linkin_Park_Hybrid_Theory 4.svg" alt="">
-                                    <div class="infos">
-
-                                        <p><strong>Título</strong></p>
-                                        <p>Artista</p>
-                                        <h4>R$99,99</h4>
-                                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="prod4">
-                                    <img src="/images/produtos/mothership led.svg" alt="">
-                                    <div class="infos">
-
-                                        <p><strong>Título</strong></p>
-                                        <p>Artista</p>
-                                        <h4>R$99,99</h4>
-                                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="prod5">
-                                    <img src="/images/produtos/metallica.svg" alt="">
-                                    <div class="infos">
-
-                                        <p><strong>Título</strong></p>
-                                        <p>Artista</p>
-                                        <h4>R$99,99</h4>
-                                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="prod6">
-                                    <img src="/images/produtos/AmericanIdiot 4.svg" alt="">
-                                    <div class="infos">
-
-                                        <p><strong>Título</strong></p>
-                                        <p>Artista</p>
-                                        <h4>R$99,99</h4>
-                                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="prod7">
-                                    <img src="/images/produtos/Linkin_Park_Hybrid_Theory 4.svg" alt="">
-                                    <div class="infos">
-
-                                        <p><strong>Título</strong></p>
-                                        <p>Artista</p>
-                                        <h4>R$99,99</h4>
-                                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
-                                    </div>
-                                </div>
-                                <div class="prod8">
-                                    <img src="/images/produtos/mothership led.svg" alt="">
-                                    <div class="infos">
-
-                                        <p><strong>Título</strong></p>
-                                        <p>Artista</p>
-                                        <h4>R$99,99</h4>
-                                        <a href=""><img src="/images/produtos/heartButton.svg" alt=""></a>
-                                    </div>
-                                </div>      
+                                <% } %>
+                               
+                               
+                                
+                                 
                             </div>
-                                </article>
-                            </div>
-                        </div>
+                                
+                            
+                        
                     </div>
                 </div>
                 
@@ -137,4 +74,3 @@
         <%- include('./partials/footer') %>
     </body>
 
-</html>

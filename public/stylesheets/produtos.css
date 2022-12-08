@@ -121,6 +121,11 @@ div[class^="prod"]{
     
 }
 
+div[class^="prod"] a img{
+    height: 100px;
+    width: 100px;
+}
+
 div[class^="prod"] .infos {
     padding: 10px;
 

@@ -5,7 +5,9 @@ const produtos = require('../database/produtos.json');
 const ProdutosController = {
 
     index: (req, res)=>{
-        res.render('produtos.ejs');
+
+        
+        res.render('produtos.ejs', {produtos: produtos});
     },
 
     show: (req, res)=>{
