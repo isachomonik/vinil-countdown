@@ -1,1 +1,9 @@
-[]
+[
+{
+    "id": 1,
+    "senha": "$2a$09$2brGT/I0.HPgv1Dw.HZ7ceS3YELjLc0KQ/GI83VxiY/k5s2wXjuOK", 
+    "nome": "Ligia",
+    "email": "ligia@ligia.com"
+}
+]
+

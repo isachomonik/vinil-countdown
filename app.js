@@ -56,6 +56,7 @@ app.use('/carrinho', carrinhoRouter);
 
 // Router Minha Conta
 const minhaContaRouter = require('./routers/minhaContaRouter');
+
 app.use('/minha_conta', minhaContaRouter);
 
 //.................................................................................
@@ -70,9 +71,9 @@ app.use("/views_redirect", (req, res)=>{
 });
 
 // VIEWS LOGIN ( LIGIA FELIX)
-app.use('/login', (req, res)=>{
-    res.render('login.ejs');
-})
+const AuthRouter = require('./routers/AuthRouter');
+app.use('/auth', AuthRouter);
+
 
 // VIEWS PEDIDO CONFIRMADO (STEFANIE)
 app.use('/pedido_confirmado', (req, res)=>{
