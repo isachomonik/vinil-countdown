@@ -1,0 +1,96 @@
+/* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-minhaConta{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    margin-top: 5vh;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.abas-minha-conta{
+    padding: 15px;
+    border-bottom: 2px solid gray;
+
+    margin-right: 5%;
+}
+
+#aba-nome{
+    margin-top: 25px;
+}
+
+
+.container-filho-0{
+    display: flex;
+}
+
+.container-filho-0 p {
+    font-size: 16px;
+
+}
+
+.container-filho{
+    display: flex;
+  
+}
+
+.container-filho-2{
+    display: flex;
+   
+}
+
+.div-cadastro {
+text-transform: uppercase;
+
+
+}
+
+.div-cadastro input, .div-cadastro textarea {
+    width: 80%;
+    border-radius: 10px;
+    border-color: rgb(204, 197, 197);
+    border-width: 5px;
+    margin-bottom: 20px;
+}
+
+
+.div-cadastro h1{
+
+    margin-bottom: 5vh;
+}
+    
+
+.container-filho-2 button{
+
+    background-color: green;
+    color: white;
+    margin-left: 35%;
+    margin-top: 5%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    height: 4vh;
+    border-radius: 15px;
+    padding: 0 5px 0 5px;
+}
+
+input {
+    border-style: none;
+    border: 1px solid #000000;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.border {
+    width: 1px;
+    height: 80%;
+    background-color: black;
+}
