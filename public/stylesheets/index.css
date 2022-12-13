@@ -80,11 +80,9 @@ html {
 
 .listrecent {
     display: flex;
-    max-width: 1260px;
     margin: auto;
     justify-content: space-around;
-    /* padding-left: 50px;
-    padding-right: 50px; */
+    max-width: 1256px;
 }
 
 .buttongoup {
@@ -97,16 +95,29 @@ html {
 .listrecent {
     border-color: green;
     border-radius: 5px;
+    padding-bottom: 50px;
 }
 .recent1{
+    /* background-color: #d6d6d6;
+    border-radius: 5px; */
     background-color: #d6d6d6;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 .recent2{
     background-color: #d6d6d6;
     border-radius: 5px;
 }
 .recent3{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.recent4{
+    background-color: #d6d6d6;
+    border-radius: 5px;
+}
+.recent5{
     background-color: #d6d6d6;
     border-radius: 5px;
 }
