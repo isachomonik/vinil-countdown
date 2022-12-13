@@ -1,53 +1,61 @@
- /*CONFIGURACAO CSS GLOBAL*/
- 
- @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+/*CONFIGURACAO CSS GLOBAL*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
 
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
- }
- 
- html, body {
-    font-family: 'Roboto','Open Sans', sans-serif;
-    font-weight: 500;
-    background-color: #FFFFFF;
- }
- 
- header ul {
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+html,body {
+   font-family: 'Roboto', 'Open Sans', sans-serif;
+   font-weight: 500;
+   background-color: #FFFFFF;
+}
+
+/*----------------------*/
+
+header .logo img {
+   width: 100px;
+   background-color: #FFFFFF;
+   border-radius: 10px;
+}
+
+header ul {
    display: flex;
    justify-content: space-around;
    list-style-type: none;
    width: 100%;
    /* padding: 0 2rem 0 2rem; */
 }
-header ul li a{
+
+header ul li a {
    text-decoration: none;
    color: #FFFFFF;
    font-weight: 500;
    font-size: larger;
 }
 
- header input {
+header input {
    width: 30rem;
    border-radius: 15px;
    border: 0;
    height: 2.8125rem;
    padding: 0.8125rem;
    /* background: white url('/images/header/lupa 1.svg') right no-repeat; */
- }
+}
 
- .searchInput {
+.searchInput {
    position: relative;
- }
+}
 
- .searchInput i {
+.searchInput i {
    position: absolute;
    top: 7.5px;
    left: 27.5rem;
    z-index: 2;
- }
+}
 
 #container {
    background-color: #292929;
@@ -65,5 +73,5 @@ header ul li a{
    justify-content: space-between;
    align-items: center;
    gap: 1.5625rem;
-   
+
 }

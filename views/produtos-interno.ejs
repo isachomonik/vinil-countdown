@@ -1,0 +1,160 @@
+<%- include('./partials/head') %>
+<a id="top"></a>    
+<%- include('./partials/header') %>
+
+        <!--CSS PRODUTO-INTERNO-->
+        <link rel="stylesheet" href="/stylesheets/produtos-interno.css">
+
+        <!--HTML PRINCIPAL PÁGINA PRODUTO-INTERNO--> 
+        <main>
+            <article class="container-1">
+
+                <section class="navegacao">
+
+                    <div><%=vinil.categoria%> > <%=vinil.estilo%> > <%=vinil.nome%></div>
+
+                </section>
+
+                <section>
+    
+                    <div class="imagens-pequenas">
+                        <img src="<%=vinil.img1%>" alt="img1">
+                        <img src="<%=vinil.img2%>" alt="img2">
+                        <img src="<%=vinil.img3%>" alt="img3">
+                    </div>
+                
+                
+                    <div class="imagem-grande">
+                        <img src="<%=vinil.imgGg%>" alt="imgg">
+                    </div>
+
+                    <section class="informacoes-venda">
+
+                        <h3> <%=vinil.nome%> </h3>
+
+                        <h4>MARCA: <%=vinil.marca%> <br> EAN: <%=vinil.ean%></h4>
+
+                        <div class="informacoes-preco">
+                        
+                            <div class="informacoes-preco-qtd">
+
+
+                                <h2>R$<%=vinil.precoDe.toString().replace(".", ",")%></h2>
+                                <p>QTD</p>
+                                <img src="/images/produtos_interno/button_qtd1.svg" alt="-">
+                                <p>01</p>
+                                <img src="/images/produtos_interno/button_qtd2.svg" alt="+">
+                            </div>
+
+                            <div class="informacoes-preco-desconto">
+                                <h2>R$<%=vinil.precoPor.toString().replace(".", ",")%></h2>
+                                <p><%=vinil.desconto%>%OFF</p>
+                            </div>
+
+                            <div class="informacoes-preco-parcelas">
+                                <p>em <strong><%=vinil.qtdParcelas%>x SEM JUROS</strong> no cartão de crédito</p>
+                            </div>
+
+                            <div class="informacoes-preco-frete">
+                                <p>Calcular Frete</p>
+                                <img src="/images/produtos_interno/img_frete_localizacao.svg" alt="img_frete_localizacao">
+                            </div>
+
+                            <div class="informacoes-preco-form-cep">
+                                <form action="">
+                                    <label for="cep"></label>
+                                    <input type="text" name="cep" id="cep" placeholder="Digite seu CEP"> 
+                                </form>
+
+                                <button type="submit">OK</button>
+                            </div>
+
+                            <div class="informacoes-preco-comprar">
+                                <button type="submit">COMPRAR</button>
+                                <p>Este produto é vendido e entregue por Vinil Countdown</p>
+                            </div>
+                            
+                        </div>
+
+                    </section>
+                    
+                </section>
+                    
+                <nav class="nav-tabs">
+                    <ul>
+
+                        <li> 
+                            <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
+                            <label for="tab1">Descrição Geral </label>
+                            <div class="content">
+                                <article>
+                                    
+                                    <h2><%=vinil.descricaoTitulo%></h2>
+                                    <h4><%=vinil.descricaoSubTitulo%></h4>
+                                    
+                                    <div>
+                                        <h3> Descricao: </h3>
+                                        <p> <%=vinil.descricao%> </p>  
+                                    </div>
+
+                                    <div>
+                                        <h3> Músicos: </h3>
+                                        <p> <%=vinil.musicos%> </p>  
+                                    </div>
+
+                                    <div>
+                                        <h3> Músicas: </h3>
+                                        
+                                        <p>
+                                            <strong> Lado A: </strong>  
+                                            <%=vinil.musicasLadoA%>
+                                        </p>
+
+                                        <p>
+                                            <strong> Lado B: </strong> 
+                                            <%=vinil.musicasLadoB%>
+                                        </p>  
+                                    </div>
+
+                                </article>
+                            </div>
+                        </li>
+
+                        <li> 
+                            <input type="radio" name="tabs" class="rd_tabs" id="tab2">
+                            <label for="tab2">Características </label>
+                            <div class="content">
+                                <article>
+                                    <div>
+                                        <h3> Peso: </h3>
+                                        <p><%=vinil.peso%> Kg</p>  
+                                    </div>
+
+                                    <div>
+                                        <h3> Dimensão: </h3>
+                                        <p><%=vinil.dimensaoLargura%> X <%=vinil.dimensaoComprimento%> X <%=vinil.dimensaoProfundidade%> cm </p>  
+                                    </div>
+
+                                    <div>
+                                        <h3> Gravadora: </h3>
+                                        <p><%=vinil.gravadora%></p>  
+                                    </div>
+                                    
+                                    <div>
+                                        <h3> Mídia: </h3>
+                                        <p><%=vinil.midia%></p>  
+                                    </div>
+                                </article>
+                            </div>
+                        </li>  
+                    </ul>
+                </nav>
+            </article>
+        </main>
+        
+        <section id	="top_butt">
+            <button><a href="#top"><img src="/images/produtos_interno/button_top.svg" alt="botao topo"></a></button>
+        </section>
+        
+
+<%- include('./partials/footer') %>

@@ -1,4 +1,194 @@
-/* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
-main p {
-    background-color: rgb(43, 150, 226);
+:root {
+  --branco: #fff;
+  --preto: #292929;
+  --botao_comprar: #29bfe0;
+  --botao_finalizar_compra: #36BB5B;
+  --roboto: "Roboto", "Open Sans", sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 3fr 3fr 2fr;
+  grid-auto-flow: row;
+}
+
+.localizador__page {
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+.container-disco-one, 
+.formulario ,
+.container-disco-two {
+  padding: 50px 0px 0px 35px;
+}
+
+.titulo__principal {
+  font-size: 40px;
+}
+
+.imagem__beatles, 
+.imagem__beatles__two {
+  padding: 35px 0px;
+  float: left;
+}
+
+.titulo__disco__beatles, 
+.titulo__disco__beatles__two,
+.titulo__cupom {
+  padding: 35px 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.lista__disco__one,
+.lista__disco__two {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.adicionar__item {
+  border: 4px 1cm var(--preto);
+  margin: 2px;
+  color: inherit;
+  pointer-events: none;
+  font-size: 20px;
+  border: solid 1px rgb(130, 130, 130);
+}
+
+.form {
+  grid-area: 3;
+}
+
+.formulario__botao {
+  display: flex;
+  gap: 15px;
+  float: left;
+  align-items: center;
+  text-align: center;
+}
+
+.formulario__cupom, 
+.formulario__cep {
+  padding: 8px 10px;
+  border: solid var(--preto);
+  border-radius: 10px;
+}
+
+.botao__adicionar,
+.botao__calcular {
+  padding: 8px 12px;
+  background: var(--preto);
+  color: var(--branco);
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.botao__continuar__comprando {
+  padding: 8px 80px;
+  background-color: var(--botao_comprar);
+  color: var(--branco);
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--roboto);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.botao__continue {
+  display: flex;
+  justify-content: end;
+}
+
+@media screen and (min-width: 1024px) {
+.containe-carrinho {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 120px;
+} 
+}
+
+@media screen and (min-width: 1024px) {
+.titulo__carrrinho {
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 50px;
+}
+}
+
+@media screen and (min-width: 1024px) {
+.total__carrinho,
+.botao-finalizar-compra {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 50px 0px;
+} 
+}
+
+@media screen and (min-width: 1028px) {
+.carrinho-entrega {
+  grid-area: 2/2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+} 
+}
+
+.entrega {
+  font-family: var(--roboto);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--preto);
+  margin-right: 15px;
+  text-align: center;
+}
+
+.icone__localização {
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+.calcular__frete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 110px;
+  padding-bottom: 5px;
+} 
+}
+
+.formulario-total-carrinho {
+  display: flex;
+  justify-content: center;
+}
+
+.botao__finalizar__compra {
+  padding: 8px 55px;
+  background-color: var(--botao_finalizar_compra);
+  color: var(--branco);
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--roboto);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.linha {
+  margin: 8px 0px;
 }

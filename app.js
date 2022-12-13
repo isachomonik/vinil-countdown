@@ -15,7 +15,6 @@ var path = require('path');
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-
 // Receberá as informaçes do formulário e deixara disponivel como um objeto literal
 //Isso fará com que o processamento das informacoes enviadas via formulário pelo método 
 //POST funcione dentro de um objeto literal, assim dando a possibilidade de trabalhar com 
@@ -57,14 +56,37 @@ app.use('/carrinho', carrinhoRouter);
 
 // Router Minha Conta
 const minhaContaRouter = require('./routers/minhaContaRouter');
+
 app.use('/minha_conta', minhaContaRouter);
 
-const loginRouter = require('./routers/loginRouter');
-app.use('/login', loginRouter);
+//.................................................................................
+//.................................................................................
 
-const pedidoConfRouter = require('./routers/pedidoConfRouter');
-app.use('/pedido_confirmado', pedidoConfRouter)
+// VIEWS TEMPORARIAS - APOS DEFINIR ONDE SERÁ USADA APAGAR ELA DO SERVIDOR
+//----------------------------//
 
+app.use("/views_redirect", (req, res)=>{
+
+    res.render('viewsRedirect.ejs');
+});
+
+// VIEWS LOGIN ( LIGIA FELIX)
+const AuthRouter = require('./routers/AuthRouter');
+app.use('/auth', AuthRouter);
+
+
+// VIEWS PEDIDO CONFIRMADO (STEFANIE)
+app.use('/pedido_confirmado', (req, res)=>{
+    res.render('pedidoConfirmado.ejs');
+})
+
+// VIEWS NOME DA VIEW (NOME DO DEV.)
+// app.use('/DIGITE AQUI O ENDERECO DA ROTA', (req, res)=>{
+// res.render('DIGITE AQUI O NOME DA PÁGINA A REDENRIZAR.ejs');
+// })
+// APÓS INSIRA NA VIEWS ( viewsRedirect.ejs) um link exemplo (<a href="/pedido_confirmado">PÁGINA PEDIDO CONFIRMADO</a>)
+
+//----------------------------//
 
 //.................................................................................
 //.................................................................................
@@ -78,5 +100,3 @@ app.use((req, res, next) => {
 
 ///5. Configurando porta para inicializacao do servidor (Running 3000)
 app.listen(3000, ()=>console.log('Server running on port 3000'))
-
-//batata 

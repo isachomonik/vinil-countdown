@@ -1,10 +1,90 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    
+div.conteiner {
+    margin: 40px 147px;
+    font-style: normal;
+    font-weight: 400;
 }
 
-div.conteiner {
-    margin: auto 147px;
+#titulo {
+    color: #292929;
+    font-weight: 500;
+}
+
+.pagamento {
+    color: #29BFE0;            /* Verificar a cor*/
+    background-color: #e8fdf6; /* Verificar a cor*/
+    border: 1px solid #29BFE0; /* Verificar a cor*/
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#aprovado {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #36BB5B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#aprovado-icone {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#aprovado-texto {
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#linha-horizontal {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: 20px 0px 20px 0px;
+}
+
+.informacoes {
+    color: #292929;
+    display: flex;
+}
+
+#disco-imagem {
+    height: 150px;
+    margin-right: 30px;
+}
+
+#informacoes-titulo {
+    font-weight: 500;
+}
+
+#informacoes-lista {
+    list-style-type: none;
+}
+
+button {
+    padding: 10px 40px 10px 40px;
+    background: #36BB5B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    color: white;
+    cursor: pointer;
+}
+
+.continuar {
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
 }

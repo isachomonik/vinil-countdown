@@ -2,16 +2,101 @@
 
     <body>
         <%- include('./partials/header') %>
-
             <link rel="stylesheet" href="/stylesheets/carrinho.css">
 
-            <main>
+            <main class="container">
+
+                <div class="container-disco-one">
+
+                    <p class="localizador__page">Pagina Inicial > Carrinho</p>
+                    <h1 class="titulo__principal">Lista de Compras</h1>
+                    <div class="imagem__beatles"><img src="/images/produtos_interno/img3.svg" class="disco__link__park"></div>
+                    
+                    <h2 class="titulo__disco__beatles">Lp vinil the beatles abbey road</h2>
+
+                    <ul class="lista__disco__one">
+                        <li>QTD</li>
+                        <li>
+                            <img src="/images/produtos_interno/button_qtd1.svg">
+                            <a class="adicionar__item" href="#"> 02 </a>
+                            <img src="/images/produtos_interno/button_qtd2.svg">
+                        </li>
+                        <li>Preço</li>
+                        <li>R$ 100,00</li>
+                        <li>Subtotal</li>
+                        <li>R$ 200,00</li>
+                    </ul>
+                    <hr class="linha" noshade>
+                </div>
+
+                <div class="containe-carrinho">
+                        <h4 class="titulo__carrrinho">Total Carrinho</h4>
+  
+                        <section class="total__carrinho">
+                            <p>Subtotal</p>
+                            <p>R$ 400,00</p>
+                        </section>
+                </div>
+               
+                <div class="carrinho-entrega">
+                    <section class="calcular__frete">
+                    <p class="entrega">Calcular Frete</p>
+                    <img class="icone__localização" src="/images/produtos_interno/img_frete_localizacao.svg" alt="icone__localização">
+                    </section>
+                    <section class="formulario-total-carrinho"> 
+                        <form class="formulario__carrinho">
+                            <input type="text" class="formulario__cep" placeholder="Digite seu Cep">
+                            <button class="botao__calcular" type="submit">Calcular</button>
+                        </form>
+                    </section>
+
+                    <section class="total__carrinho">
+                        <p>Total</p>
+                        <p>R$ 400,00</p>
+                    </section>
+
+                    <section class="botao-finalizar-compra">
+                        <button class="botao__finalizar__compra" type="submit">Finalizar compra</button>
+                    </section>
+                </div>       
                 
-                <p>TESTE: PAGINA CARRINHO</p>
-                
+                <div>
+                    <section class="container-disco-two">
+                        <div  class="imagem__beatles__two">
+                            <img src="/images/produtos_interno/img1.svg" class="disco__link__park">
+                        </div> 
+                            <h2 class="titulo__disco__beatles__two">Return of the dream canteen (exclusive purple)</h2>
+
+                        <ul class="lista__disco__two">
+                            <li>QTD</li>
+                            <li><img src="/images/produtos_interno/button_qtd1.svg">
+                                <a class="adicionar__item" href="#"> 02 </a>
+                                <img src="/images/produtos_interno/button_qtd2.svg">
+                            </li>
+                            <li>Preço</li>
+                            <li>R$ 100,00</li>
+                            <li>Subtotal</li>
+                            <li>R$ 200,00</li>
+                        </ul>
+                    <hr class="linha" noshade>
+                    </section>
+                </div>        
+                   
+                <div class="form">
+                    <section class="formulario">
+                        <h2 class="titulo__cupom">Cupom de desconto</h2>
+                        <form class="formulario__botao">
+                            <input class="formulario__cupom" type="text" id="cupon" name="cupon" placeholder="CÓDIGO">
+                            <button class="botao__adicionar" type="submit">Adicionar</button>
+                        </form>
+
+                        <section class="botao__continue">
+                            <button class="botao__continuar__comprando" type="submit">Continuar comprando</button>
+                        </section>
+                </div>    
+                    </section>
+                </div>
             </main>
-
-        <%- include('./partials/footer') %>
+            <%- include('./partials/footer') %>
     </body>
-
 </html>
