@@ -1,0 +1,101 @@
+<%- include('./partials/head') %>
+
+    <body>
+        <%- include('./partials/header') %>
+
+            <link rel="stylesheet" href="/stylesheets/cadastro.css">
+
+            <main class="main-cadastro">
+
+
+                <div class="container-filho-0">
+
+
+                    <div class="div-cadastro">
+
+                        <section class="abas-cadastro" id="aba-nome">
+                            <p>nome</p>
+
+                        </section>
+
+                        <section class="abas-cadastro">
+                            <p>pedidos</p>
+                        </section>
+                        
+                        <section class="abas-cadastro">
+                            <p>forma de pagamento</p>
+                        </section>
+
+
+                    </div>
+                </div>
+
+
+                <div class="border"></div>
+
+                <div class="container-filho">
+
+
+                    <div class="div-cadastro">
+
+                        <h1>informações</h1>
+                        <form>
+                            <label for="nomesobrenome">nome completo</label>
+                            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="input-padrao" required
+                                placeholder="email@domínio.com | .com.br">
+
+                            <label for="data">Data De Nascimento</label>
+                            <input type="date" id="data" class="input-padrao" required
+                                placeholder="Digite sua data de nascimento">
+
+                            <label for="mensagem">biografia</label>
+                            <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="border"></div>
+
+
+                <div class="container-filho-2">
+
+                    <div class="div-cadastro">
+
+                        <h1>segurança</h1>
+                        <form>
+                            <label for="senha-antiga">senha antiga</label>
+                            <input type="text" id="senha-antiga" class="input-padrao" required>
+
+                            <label for="senha">nova senha</label>
+                            <input type="password" id="senha" class="input-padrao" required
+                                placeholder="digite sua nova senha">
+
+                            <label for="confimarsenha">confirmar nova senha</label>
+                            <input type="password" id="confirmarsenha" class="input-padrao" required
+                                placeholder="Redigite sua nova senha">
+
+                            <label for="email">autentificação dois fatores</label>
+                            <input type="email" id="email" class="input-padrao" required
+                                placeholder="email@domínio.com | .com.br">
+                        </form>
+
+                        <button>salvar alterações</button>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </main>
+
+            <%- include('./partials/footer') %>
+    </body>
+
+    </html>

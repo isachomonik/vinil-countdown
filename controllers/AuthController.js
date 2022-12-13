@@ -6,7 +6,7 @@ const AuthController = {
         res.send(req.body);
     },
     login: (req,res) =>{
-        res.send(req.body);
+        res.render("index.ejs");
     
     }
 }
