@@ -34,7 +34,23 @@
 
                         <h1>NÃO SOU CADASTRADO</h1>
                         <h5>CADASTRE-SE AGORA! É RÁPIDO E SEGURO</h5>
-                        <button id="cadastrese">CLIQUE E CADASTRE-SE</button>
+
+                        <form method='POST' action="/auth/cadastro">
+                            <label for="nome">Nome:</label>
+                            <input type="nome" name="nome" id="nome">
+
+                            <label for="email">E-MAIL:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu melhor email">
+
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha">
+                            
+                            <label for="confimarsenha">Confirmar Senha:</label>
+                            <input type="password" name="confimarsenha" id="confirmarsenha">
+
+                        </form>
+
+                        <button id="cadastrese"> <a href="/cadastro">CLIQUE E CADASTRE-SE</a> </button>
 
                     </div>
                 </div>
