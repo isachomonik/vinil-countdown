@@ -59,6 +59,10 @@ const minhaContaRouter = require('./routers/minhaContaRouter');
 
 app.use('/minha_conta', minhaContaRouter);
 
+// Router Cadastro
+const cadastroRouter = require('./routers/CadastroRouter');
+app.use('/cadastro', cadastroRouter)
+
 //.................................................................................
 //.................................................................................
 
