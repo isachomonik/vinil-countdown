@@ -1,9 +1,31 @@
 [
-{
-    "id": 1,
-    "senha": "$2a$09$2brGT/I0.HPgv1Dw.HZ7ceS3YELjLc0KQ/GI83VxiY/k5s2wXjuOK", 
-    "nome": "Ligia",
-    "email": "ligia@ligia.com"
-}
+    {
+        "id": 1,
+        "senha": "$2a$09$2brGT/I0.HPgv1Dw.HZ7ceS3YELjLc0KQ/GI83VxiY/k5s2wXjuOK",
+        "nome": "Ligia",
+        "email": "ligia@ligia.com"
+    },
+    {
+        "nome": "teste",
+        "email": "user@teste.com",
+        "senha": "$2b$10$vg52MhvooLtQml0jWKpAm.E52RBAXyc4o5M4vSVFjz.N0HdtbVVLi"
+    },
+    {
+        "id": "am0pclwlbm9zf3z",
+        "nome": "teste",
+        "email": "teste@user.com",
+        "senha": "$2b$10$Xpk0uCcOBDQc7QergJchTOFp.7Zc./CnXNwVsTEnlDKktUx8c9Yj."
+    },
+    {
+        "id": "am0pclwlbma06se",
+        "nome": "teste",
+        "email": "teste@user.com",
+        "senha": "$2b$10$q8IAQ1sAEs/7N.jThDp4/easusyJRvVkcMNiYryigwlriQTF9H9/W"
+    },
+    {
+        "id": "am0pj8wlbma1cmx",
+        "nome": "astolfo",
+        "email": "astolfo@email.com",
+        "senha": "$2b$10$SJFL6YmcTEhjkMuRlwC//OmCnDMFhXqXIOh.j2R5tM16J5imW2dbu"
+    }
 ]
-
