@@ -55,5 +55,33 @@
         "dimensaoProfundidade":11,
         "gravadora":"TESTE",
         "midia":"TESTE"
+    },
+    {
+        "id": 3,
+        "categoria": "LPS E DISCOS DE VINIL",
+        "estilo": "POP ROCK",
+        "nome": "Brothers In Arms",
+        "marca": "THE BEATLES RECORDS",
+        "ean": 5099902987612,
+        "precoDe": 129.95,
+        "precoPor": 110.45,
+        "desconto": 15,
+        "qtdParcelas": 6,
+        "img1":"/images/produtos_interno/img_gg.jpg",
+        "img2":"/images/produtos_interno/img_1.jpg",
+        "img3":"/images/produtos_interno/img_1.jpg",
+        "imgGg":"/images/produtos_interno/img_gg.jpg",
+        "descricaoTitulo": "Lp - Pink Floyd - The Dark Side Of The Moon",
+        "descricaoSubTitulo": "Disco de vinil, capa dupla, encarte, pôster, MP3, postais, lacrado, remasterizado, 180g",
+        "descricao":"É o oitavo álbum do Pink Floyd, gravado nos estúdios Abbey Road em Londres. Levou mais de oito meses para ser produzido, um tempo extremamente longo para aquela época. O álbum foi lançado em uma sessão de audição especial no planetário de Londres, em janeiro de 1.973. Dark Side Of The Moon liderou a parada de álbuns nos EUA, onde fez uma carreira de 300 semanas. No Reino Unido, o disco chegou ao segundo lugar. O primeiro compacto do álbum foi Money, que inclui um acompanhamento ritmico feito de sons de moedas e caixas registradoras sampleados (de uma forma bem engenharada por Roger Waters), atingiu o 13° lugar no Top 100 americano. Para deixar os sons sampleados do dinheiro no compasso 7/4, a fita master teve de ser cortada e emendada novamente, usando uma régua para ter certeza da precisão das batidas. Um segundo compacto extraído do álbum foi Us And Them, editado em outubro de 1973. Esta prensagem em disco de vinil é muito especial para colecionadores, pois é uma edição premium com os LPs em 180g, com a capa gatefold (dupla), pôsters, postais e um card para baixar o MP3 de alta qualidade diretamente no site da gravadora.",
+        "musicos":"David Gilmour, vocal e guitarras Nick Mason, percução e efeitos Richard Wright, teclados e vocais Roger Waters, Baixo, vocal e efeitos Dick Perry, sax ('Us And Them', 'Money') Clare Torry, vocais ('The Great Gig In The Sky') Doris Troy, Leslie Duncan, Liza Strike, Barry St. John, backing vocals",
+        "musicasLadoA":"1 - Speak To Me 2 - Breathe In The Air 3 - On The Run 4 - Time 5 - The Great Gig In The Sky ",
+        "musicasLadoB":"1 - Money 2 - Us And Them 3 - Any Colour You Like 4 - Brain Damage 5 - Eclipse",
+        "peso":0.450,
+        "dimensaoLargura":34,
+        "dimensaoComprimento":34,
+        "dimensaoProfundidade":3,
+        "gravadora":"BGM",
+        "midia":"Disco de Vinil"
     }
 ]

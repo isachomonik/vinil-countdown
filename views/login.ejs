@@ -6,20 +6,21 @@
             <link rel="stylesheet" href="/stylesheets/login.css">
 
             <main class="container">
-                
+
                 <div class="login">
                     <img class="img" src="images/login/avatar.svg" alt="login">
                     <div class="borda"></div>
-        
+
                     <div class="cadastrado">
-                        <h1 >JÁ SOU CADASTRADO</h1>
+                        <h1>JÁ SOU CADASTRADO</h1>
                         <form method="post" action="/auth/login">
-                            <label  for="email">E-MAIL:</label>
-                            <input name="email" type="email" id="email"  class="input-padrao" required
+                            <label for="email">E-MAIL:</label>
+                            <input name="email" type="email" id="email" class="input-padrao" required
                                 placeholder="Digite seu e-mail">
 
                             <label for="senha">SENHA:</label>
-                            <input name="senha" type="password" id="senha" class="password" required placeholder="Digite sua senha">
+                            <input name="senha" type="password" id="senha" class="password" required
+                                placeholder="Digite sua senha">
 
                             <button id="entrar">ENTRAR</button>
                             <h5 id="esqueci">Esqueci minha senha</h5>
@@ -29,12 +30,32 @@
 
                     </div>
                     <div class="borda"></div>
-                    
+
                     <div class="naocadastrado">
 
                         <h1>NÃO SOU CADASTRADO</h1>
                         <h5>CADASTRE-SE AGORA! É RÁPIDO E SEGURO</h5>
-                        <button id="cadastrese">CLIQUE E CADASTRE-SE</button>
+                        
+                        <form method='POST' action="/auth/cadastro">
+                            <label for="nome">Nome:</label>
+                            <input type="nome" name="nome" id="nome">
+
+                            <label for="email">E-MAIL:</label>
+                            <input type="email" name="email" id="email" placeholder="Digite seu melhor email">
+
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha">
+                            
+                            <label for="confimarsenha">Confirmar Senha:</label>
+                            <input type="password" name="confimarsenha" id="confirmarsenha">
+
+                            <button id="cadastrese"> CADASTRE-SE </button>
+                        </form>
+
+<<<<<<< HEAD
+                        <button id="cadastrese"> <a href="/cadastro">CLIQUE E CADASTRE-SE</a> </button>
+=======
+>>>>>>> d347fa8382f36f2ad7266fc0b74ceb8326497b0f
 
                     </div>
                 </div>
