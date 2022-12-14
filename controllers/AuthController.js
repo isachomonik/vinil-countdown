@@ -5,9 +5,11 @@ const path = require('path')
 const uniqid = require('uniqid')
 
 const AuthController = {
+
     showEntrar: (req,res)=> {
         res.render("login.ejs");
     },
+
     cadastro: (req, res) => {
 
         let novoUsuario = {
@@ -23,6 +25,7 @@ const AuthController = {
 
         res.send(req.body);
     },
+    
     login: (req,res) =>{
         res.render("index.ejs");
     }
