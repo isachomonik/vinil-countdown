@@ -6,6 +6,7 @@ var express = require('express');
 
 // 2 Config. Modulo express para chamar como função
 var app = express();
+const sessions = require('express-session')
 
 //3 Setando o motor de visualizacao como extensao EJS
 app.set("view engine", 'ejs');
@@ -21,6 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 //esses dados, caso nao possua essas duas linhas de código nao ira funcionar.
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
+
+
 
 //Os métodos CRUD, PUT e DELETE nao sao suportados nativamente por todos os navegadores
 //As duas linhas de código abaixo chama o módulo para substituir o metodo POST por PUT ou DELETE,
