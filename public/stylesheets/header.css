@@ -75,3 +75,26 @@ header input {
    gap: 1.5625rem;
 
 }
+
+#foto-utilizador{
+   position: relative;
+}
+
+ul li ul{
+   display: none;
+   top: 100px;
+   position: absolute;
+   background-color: gray;
+   padding: 40px 80px 20px 20px   
+}
+
+#dropdown options{
+   display: block;
+   padding: 5px;
+}
+
+ul li:hover ul{
+   display: block;
+
+}
+
