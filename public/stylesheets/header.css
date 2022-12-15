@@ -76,6 +76,7 @@ header input {
 
 }
 
+<<<<<<< HEAD
  a, .dropbtn {
    display: inline-block;
    color: white;
@@ -114,3 +115,27 @@ header input {
  .dropdown:hover .dropdown-content {
    display: block;
  }
+=======
+#foto-utilizador{
+   position: relative;
+}
+
+ul li ul{
+   display: none;
+   top: 100px;
+   position: absolute;
+   background-color: gray;
+   padding: 40px 80px 20px 20px   
+}
+
+#dropdown options{
+   display: block;
+   padding: 5px;
+}
+
+ul li:hover ul{
+   display: block;
+
+}
+
+>>>>>>> b1cfb5c78606cc1222234cc206a52b0bbaeba7b6
