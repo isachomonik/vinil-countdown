@@ -2,7 +2,9 @@ const usuarios = require('../database/usuarios.json')
 const bcrypt = require('bcrypt');
 const fs = require('fs')
 const path = require('path')
-const uniqid = require('uniqid')
+const uniqid = require('uniqid');
+const { response } = require('express');
+
 
 const AuthController = {
 
@@ -27,6 +29,7 @@ const AuthController = {
     },
     
     login: (req,res) =>{
+
         res.render("index.ejs");
     }
 }
