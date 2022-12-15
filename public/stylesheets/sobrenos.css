@@ -1,4 +1,48 @@
-/* LINHA DE CÓDIGO PARA TESTE CSS, POR FAVOR APAGAR AO CODAR SEU CSS*/
-main p {
-    background-color: rgb(43, 226, 211);
+.coluna1 {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: 1fr 0.8fr;
+    grid-auto-flow: row;
+  }
+
+.titulo_coluna1 { 
+    text-align: center;
+    margin: 1rem 0rem 2rem;
+    font-size: 5rem;
+    font-variant: small-caps;
+}
+
+.paragrafo_about {
+    width: 90vw;
+    justify-self: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.coluna2 {
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.titulo_coluna2 {
+    margin: 1rem 0rem 2rem;
+    font-variant: small-caps;
+}
+
+.coluna3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+}
+
+.caixas_text {
+    margin: 1rem;
+    border: solid rgb(213, 213, 213) 0.1rem;
+    border-radius: 0.2rem;
+}
+
+.caixa_titulo {
+    margin: 0.9rem 0rem;
+    text-align: center;
 }
