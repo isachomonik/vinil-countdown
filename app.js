@@ -95,6 +95,14 @@ app.use('/pedido_confirmado', (req, res)=>{
 //.................................................................................
 //.................................................................................
 
+//---------------------------------------------------------
+
+const RouterUser = require('./routers/UsuariosRouter');
+
+app.use('/', RouterUser);
+
+//---------------------------------------------------------
+
 
 // Caso não seja encontrado nenhuma das páginas acima, aplicar
 //redirecionamento para erro 404
